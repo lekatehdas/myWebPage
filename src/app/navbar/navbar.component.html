@@ -1,16 +1,45 @@
 <mat-toolbar color="primary" class="navbar">
   <span class="name">Aki Sirkiä</span>
   <span class="spacer"></span>
-  <button
+  <a
     mat-button
-    routerLink="/about"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }"
+    href="#about"
+    (click)="scrollToElement($event, 'about')"
+    [class.active]="activeLink === 'about'"
   >
     About
-  </button>
-  <button mat-button routerLink="/skills" routerLinkActive="active">Skills</button>
-  <button mat-button routerLink="/projects" routerLinkActive="active">Projects</button>
-  <button mat-button routerLink="/resume" routerLinkActive="active">Resume</button>
-  <button mat-button routerLink="/contact" routerLinkActive="active">Contact</button>
+  </a>
+  <a
+    mat-button
+    href="#skills"
+    (click)="scrollToElement($event, 'skills')"
+    [class.active]="activeLink === 'skills'"
+  >
+    Skills
+  </a>
+  <a
+    mat-button
+    href="#projects"
+    (click)="scrollToElement($event, 'projects')"
+    [class.active]="activeLink === 'projects'"
+  >
+    Projects
+  </a>
+  <a
+    mat-button
+    href="#resume"
+    (click)="scrollToElement($event, 'resume')"
+    [class.active]="activeLink === 'resume'"
+  >
+    Resume
+  </a>
+  <a
+    mat-button
+    href="#contact"
+    (click)="scrollToElement($event, 'contact')"
+    [class.active]="activeLink === 'contact'"
+  >
+    Contact
+  </a>
+
 </mat-toolbar>

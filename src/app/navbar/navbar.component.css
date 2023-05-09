@@ -3,6 +3,9 @@
   justify-content: space-between;
   width: 100%;
   background-color: var(--jet); /* Change the background color of the navbar */
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 .name {
