@@ -1,9 +1,16 @@
 <mat-toolbar color="primary" class="navbar">
   <span class="name">Aki Sirkiä</span>
   <span class="spacer"></span>
-  <button mat-button routerLink="/about" >About</button>
-  <button mat-button routerLink="/skills" >Skills</button>
-  <button mat-button routerLink="/projects" >Projects</button>
-  <button mat-button routerLink="/resume" >Resume</button>
-  <button mat-button routerLink="/contact" >Contact</button>
+  <button
+    mat-button
+    routerLink="/about"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    About
+  </button>
+  <button mat-button routerLink="/skills" routerLinkActive="active">Skills</button>
+  <button mat-button routerLink="/projects" routerLinkActive="active">Projects</button>
+  <button mat-button routerLink="/resume" routerLinkActive="active">Resume</button>
+  <button mat-button routerLink="/contact" routerLinkActive="active">Contact</button>
 </mat-toolbar>

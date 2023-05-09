@@ -2,19 +2,30 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  background-color: var(--jet); /* Change the background color of the navbar */
 }
 
 .name {
   margin-left: 10px;
   font-weight: bold;
   font-size: 1.2em;
+  color: var(--platinum); /* Change the color of the name text */
 }
 
 .spacer {
   flex: 1;
 }
 
+button {
+  color: var(--silver); /* Change the color of the button text */
+}
+
+button:hover {
+  color: var(--platinum); /* Change the color of the button text on hover */
+}
+
 .active {
   font-weight: bold;
   font-size: 1.2em;
+  color: var(--platinum); /* Change the color of the active tab text */
 }

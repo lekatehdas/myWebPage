@@ -1,3 +1,13 @@
+/* Colors Exported Palette - https://coolors.co/b2b2b2-919191-323232-493e2d-e4e4e2 */
+:root {
+  --silver: #b2b2b2;
+  --battleship-gray: #919191;
+  --jet: #323232;
+  --drab-dark-brown: #493e2d;
+  --platinum: #e4e4e2;
+}
+
+
 html,
 body {
   margin: 0;
