@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.name {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.active {
+  font-weight: bold;
+  font-size: 1.2em;
+}

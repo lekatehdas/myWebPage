@@ -1,4 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:host {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+mat-toolbar {
+  grid-row: 1;
+}
+
+router-outlet {
+  grid-row: 2;
+}
+
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('assets/fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
