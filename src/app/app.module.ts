@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { RouterModule } from "@angular/router";
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RouterModule } from "@angular/router";
     ContactComponent,
     ResumeComponent,
     ProjectsComponent,
-    NavbarComponent
+    NavbarComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<div class="project-card"
+     (click)="navigateToProject()"
+     (mouseover)="zoomIn()"
+     (mouseout)="zoomOut()">
+  <div class="project-image" [style.background-image]="'url(' + picturePath + ')'"></div>
+  <div class="project-details">
+    <h3 [class.hovered]="isHovered">{{topic}}</h3>
+    <p>{{text}}</p>
+  </div>
+</div>
