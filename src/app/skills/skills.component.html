@@ -11,12 +11,13 @@
     </div>
     <div class="skills">
       <div *ngFor="let skill of skills; index as i" class="skill">
-        <div class="skill-container" *ngIf="isVisible">
+        <div class="skill-container" [@blurIn]="isVisible ? 'focus' : 'blur'">
           <h2>{{skill.title}}</h2>
           <ul>
             <li *ngFor="let item of skill.items">{{item}}</li>
           </ul>
         </div>
+
       </div>
     </div>
   </div>

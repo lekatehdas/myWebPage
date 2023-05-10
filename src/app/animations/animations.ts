@@ -1,4 +1,4 @@
-import {trigger, transition, style, animate, query, stagger} from '@angular/animations';
+import {trigger, transition, style, animate, query, stagger, state} from '@angular/animations';
 
 export const fadeInFromLeft = trigger('fadeInFromLeft', [
   transition(':enter', [
@@ -29,3 +29,11 @@ export const fadeInAnimation = trigger('fadeIn', [
     ], { optional: true }),
   ]),
 ]);
+
+export const blurInAnimation = trigger('blurIn', [
+  state('blur', style({ filter: 'blur(2px)' })),
+  state('focus', style({ filter: 'blur(0)' })),
+  transition('blur => focus', animate('1000ms ease-out')),
+  transition('focus => blur', animate('1000ms ease-in')),
+]);
+

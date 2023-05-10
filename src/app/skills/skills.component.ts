@@ -1,12 +1,13 @@
 import {Component, HostListener, OnInit} from '@angular/core';
-import {fadeInAnimation} from "../animations/animations";
+import {fadeInAnimation, blurInAnimation} from "../animations/animations";
 import {ViewportScroller} from '@angular/common';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
-  animations: [fadeInAnimation]
+  animations: [fadeInAnimation, blurInAnimation]
+
 })
 export class SkillsComponent implements OnInit {
   currentSkill = -1;
@@ -41,14 +42,23 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
   }
 
-  checkVisibility(): void {
-    const skillsElement = document.getElementById('skills');
-    if (skillsElement) {
-      const rect = skillsElement.getBoundingClientRect();
-      this.isVisible = rect.top <= this.viewportScroller.getScrollPosition()[1] + 100 &&
-        rect.bottom > this.viewportScroller.getScrollPosition()[1] + 100;
-    }
+checkVisibility(): void {
+  const skillsElement = document.getElementById('skills');
+  const projectsElement = document.getElementById('projects');
+  if (skillsElement && projectsElement) {
+    const skillsRect = skillsElement.getBoundingClientRect();
+    const projectsRect = projectsElement.getBoundingClientRect();
+    const scrollPosition = this.viewportScroller.getScrollPosition()[1];
+
+    const halfwayPoint = projectsRect.top + (projectsRect.height / 2);
+
+    this.isVisible = (skillsRect.top <= scrollPosition + 100 &&
+      skillsRect.bottom > scrollPosition + 100) ||
+      (scrollPosition < halfwayPoint && scrollPosition >= projectsRect.top);
   }
+}
+
+
 
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
