@@ -1,6 +1,6 @@
 <div class="background-skill" [@fadeIn]>
   <div class="container component-max-width">
-    <div class="skills-texts" animate-me >
+    <div class="skills-texts" animate-me>
       <h2>Skills</h2>
       <p>
         My skills include proficiency in multiple programming languages, as well as experience in web development,
@@ -11,7 +11,7 @@
     </div>
     <div class="skills">
       <div *ngFor="let skill of skills; index as i" class="skill">
-        <div class="skill-container">
+        <div class="skill-container" *ngIf="isVisible">
           <h2>{{skill.title}}</h2>
           <ul>
             <li *ngFor="let item of skill.items">{{item}}</li>

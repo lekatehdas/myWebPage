@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {fadeInAnimation} from "../animations/animations";
+import {ViewportScroller} from '@angular/common';
 
 @Component({
   selector: 'app-skills',
@@ -9,6 +10,8 @@ import {fadeInAnimation} from "../animations/animations";
 })
 export class SkillsComponent implements OnInit {
   currentSkill = -1;
+  isVisible = false;
+
   skills = [
     {
       title: 'Programming Languages',
@@ -32,6 +35,25 @@ export class SkillsComponent implements OnInit {
     }
   ];
 
+  constructor(private viewportScroller: ViewportScroller) {
+  }
+
   ngOnInit() {
   }
+
+  checkVisibility(): void {
+    const skillsElement = document.getElementById('skills');
+    if (skillsElement) {
+      const rect = skillsElement.getBoundingClientRect();
+      this.isVisible = rect.top <= this.viewportScroller.getScrollPosition()[1] + 100 &&
+        rect.bottom > this.viewportScroller.getScrollPosition()[1] + 100;
+    }
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    this.checkVisibility();
+  }
+
+
 }
