@@ -59,3 +59,8 @@ app-contact {
 html {
   scroll-behavior: smooth;
 }
+
+.component-max-width {
+  max-width: 80em;
+  margin: 0 auto;
+}
