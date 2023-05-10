@@ -23,9 +23,9 @@ export const fadeInFromRightDelayed = trigger('fadeInFromRightDelayed', [
 
 export const fadeInAnimation = trigger('fadeIn', [
   transition('* => *', [
-    query('.skill', [
-      style({opacity: 0}),
-      stagger(100, [animate('500ms', style({opacity: 1}))]),
-    ], {optional: true}),
+    query('[animate-me]', [
+      style({ opacity: 0 }),
+      stagger(500, [animate('2000ms', style({ opacity: 1 }))]),
+    ], { optional: true }),
   ]),
 ]);

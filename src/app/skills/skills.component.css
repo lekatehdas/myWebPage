@@ -1,3 +1,8 @@
+.background-skill {
+  background: linear-gradient(to bottom, #333 0%, rgba(73, 62, 45, 0.82) 50%, #333 100%);
+  background-size: cover;
+}
+
 .container {
   padding: 15em 2em;
   display: flex;
