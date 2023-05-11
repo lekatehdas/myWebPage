@@ -9,13 +9,17 @@
 
   <div class="project-display">
     <ng-container *ngFor="let project of projects; index as i">
+
       <app-project-card
         *ngIf="currentProject === i"
+        [class]="animationClass"
         [topic]="project.topic"
         [picturePath]="project.picturePath"
         [text]="project.text"
         [url]="project.url"
       ></app-project-card>
+
+
     </ng-container>
   </div>
 

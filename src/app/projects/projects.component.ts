@@ -7,6 +7,8 @@ import {Component, OnInit, Type} from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   currentProject = 0;
+  animationClass = '';
+  timeOut = 400
   projects = [
     {
       picturePath: 'assets/hackathon.png',
@@ -23,7 +25,7 @@ export class ProjectsComponent implements OnInit {
     {
       picturePath: 'path/to/your/image3.jpg',
       text: 'I developed an Android app to gather sensor data from android devices.',
-      topic: 'Random Generator',
+      topic: 'Random Data Gatherer',
       url: 'https://github.com/lekatehdas/thesis_project'
     }
   ];
@@ -35,11 +37,21 @@ export class ProjectsComponent implements OnInit {
   }
 
   previousProject(): void {
-    this.currentProject = (this.currentProject - 1 + this.projects.length) % this.projects.length;
+    this.animationClass = 'fade-out';
+    setTimeout(() => {
+      this.currentProject = (this.currentProject - 1 + this.projects.length) % this.projects.length;
+      this.animationClass = 'fade-in';
+      setTimeout(() => this.animationClass = '', this.timeOut);
+    }, this.timeOut);
   }
 
   nextProject(): void {
-    this.currentProject = (this.currentProject + 1) % this.projects.length;
+    this.animationClass = 'fade-out';
+    setTimeout(() => {
+      this.currentProject = (this.currentProject + 1) % this.projects.length;
+      this.animationClass = 'fade-in';
+      setTimeout(() => this.animationClass = '', this.timeOut);
+    }, this.timeOut);
   }
 
 }
