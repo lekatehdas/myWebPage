@@ -1,1 +1,20 @@
-<p>resume works!</p>
+<div class="resume-container component-max-width">
+  <div class="resume-section">
+    <h1>Resume</h1>
+    <h3>Education</h3>
+    <p>{{ education }}</p>
+  </div>
+
+  <div class="resume-section work-experience-header">
+    <h3>Work Experience</h3>
+  </div>
+  <div class="work-experience-list">
+    <app-work-experience-card
+      *ngFor="let job of workExperience"
+      [jobTitle]="job.title"
+      [company]="job.company"
+      [duration]="job.duration">
+    </app-work-experience-card>
+  </div>
+  <a href="assets/Aki_Sirkia_CV.pdf" download class="download-button">Download CV</a>
+</div>

@@ -1,0 +1,62 @@
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+
+.work-experience-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  overflow-x: auto;
+}
+
+.resume-section {
+  line-height: 1.2;
+}
+
+.resume-section h1 {
+  font-weight: bold;
+  font-size: 5em;
+  line-height: 1;
+}
+
+.resume-section h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.resume-section h3 {
+  font-size: 2em;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.work-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 1em 2em;
+  font-size: 1.5em;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background: linear-gradient(to right, rgba(145, 145, 145, 0.3), rgba(51, 51, 51, 0.2));
+  text-decoration: none;
+}
+
+@media (max-width: 48em) {
+  .resume-container {
+    font-size: 1.5em;
+  }
+
+  .work-experience-list {
+    flex-direction: column;
+  }
+}
