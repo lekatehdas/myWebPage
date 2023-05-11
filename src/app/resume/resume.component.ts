@@ -9,7 +9,7 @@ export class ResumeComponent implements OnInit {
   education = 'Bachelor’s degree in Computer Science, Kristianstad University (Expected Graduation Date: 06/2023) GPA: 3.88 (out of 4.0)'
   workExperience = [
     {
-      title: "Teacher’s Assistant",
+      title: "Teaching Assistant",
       company: "Kristianstad University",
       duration: "2022 – 2023",
     },

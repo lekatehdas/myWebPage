@@ -5,6 +5,9 @@
   --jet: #323232;
   --drab-dark-brown: #493e2d;
   --platinum: #e4e4e2;
+  --background_color: #332323;
+  --forground_color: #332323FF;
+  --body_background_color: #1e1414;
 }
 
 
@@ -13,6 +16,7 @@ body {
   margin: 0;
   height: 100%;
   font-family: 'Lato', sans-serif;
+  padding-top: 32px;
 }
 
 :host {
@@ -30,7 +34,7 @@ router-outlet {
 }
 
 body {
-  background-color: #333;
+  background-color: var(--body_background_color);
   color: #fff;
 }
 
@@ -42,7 +46,6 @@ body {
 }
 
 .container {
-  padding-top: 64px;
   display: flex;
   flex-direction: column;
 }
@@ -52,7 +55,6 @@ app-skills,
 app-projects,
 app-resume,
 app-contact {
-  min-height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -63,6 +65,10 @@ html {
 .component-max-width {
   max-width: 80em;
   margin: 0 auto;
+}
+
+.page-min-height {
+  min-height: 66vh;
 }
 
 @keyframes fade-out {

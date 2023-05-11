@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: var(--jet); /* Change the background color of the navbar */
+  background-color: var(--background_color);
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -12,7 +12,7 @@
   margin-left: 10px;
   font-weight: bold;
   font-size: 1.2em;
-  color: var(--platinum); /* Change the color of the name text */
+  color: var(--platinum);
 }
 
 .spacer {
@@ -20,15 +20,15 @@
 }
 
 button {
-  color: var(--silver); /* Change the color of the button text */
+  color: var(--silver);
 }
 
 button:hover {
-  color: var(--platinum); /* Change the color of the button text on hover */
+  color: var(--platinum);
 }
 
 .active {
   font-weight: bold;
   font-size: 1.2em;
-  color: var(--platinum); /* Change the color of the active tab text */
+  color: var(--platinum);
 }
