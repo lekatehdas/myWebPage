@@ -29,15 +29,15 @@ p {
 
 .arrow-button {
   position: absolute;
-  font-size: 2em;
+  font-size: 3em;
   cursor: pointer;
-  background: none;
+  background: rgba(98, 84, 61, 0.3);
   border: none;
-  outline: none;
+  border-radius: 1em;
   color: #919191;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 0;
 }
 
 .left-arrow {
@@ -54,6 +54,7 @@ p {
   align-items: center;
   gap: 2em;
   margin-top: 10em;
+  z-index: 1;
 }
 
 @media (max-width: 48em) {

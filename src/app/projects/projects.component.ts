@@ -13,7 +13,7 @@ export class ProjectsComponent implements OnInit {
     {
       picturePath: 'assets/hackathon.png',
       topic: 'Hackathon',
-      text: 'Hackathon was an event where I, together with couple other 3rd year student, created coding puzzles for computer science students.',
+      text: 'Hackathon was an event where I, together with couple other 3rd year students, created coding puzzles for CS students.',
       url: 'https://github.com/KishDelish/hkrhackathon_backend'
     },
     {

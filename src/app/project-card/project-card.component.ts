@@ -1,10 +1,28 @@
-import { Component, Input, HostBinding } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-project-card',
   templateUrl: './project-card.component.html',
-  styleUrls: ['./project-card.component.css']
+  styleUrls: ['./project-card.component.css'],
+  animations: [
+    trigger('zoom', [
+      state('in', style({ transform: 'scale(1)' })),
+      state('out', style({ transform: 'scale(1.025)' })),
+      transition('in <=> out', animate('300ms ease-in-out'))
+    ]),
+    trigger('colorChange', [
+      state('in', style({ color: '#fff' })),
+      state('out', style({ color: 'rgb(204, 252, 203)' })),
+      transition('in <=> out', animate('300ms ease-in-out'))
+    ]),
+    trigger('textMove', [
+      state('in', style({ transform: 'translateX(0)' })),
+      state('out', style({ transform: 'translateX(10px)' })),
+      transition('in <=> out', animate('300ms ease-in-out'))
+    ])
+  ]
 })
 export class ProjectCardComponent {
   @Input() picturePath!: string;
@@ -12,20 +30,16 @@ export class ProjectCardComponent {
   @Input() url!: string;
   @Input() topic!: string;
 
-  isHovered = false;
-
-  @HostBinding('style.transform') scale = 'scale(1)';
+  zoom = 'in';
 
   constructor(private router: Router) {}
 
   zoomIn(): void {
-    this.scale = 'scale(1.05)';
-    this.isHovered = true;
+    this.zoom = 'out';
   }
 
   zoomOut(): void {
-    this.scale = 'scale(1)';
-    this.isHovered = false;
+    this.zoom = 'in';
   }
 
   navigateToProject(): void {
