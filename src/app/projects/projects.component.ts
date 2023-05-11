@@ -11,20 +11,20 @@ export class ProjectsComponent implements OnInit {
     {
       picturePath: 'assets/hackathon.png',
       topic: 'Hackathon',
-      text: 'Hackathon was an event where I, together with couple other 3rd year student,  created coding puzzles for computer science students. ',
+      text: 'Hackathon was an event where I, together with couple other 3rd year student, created coding puzzles for computer science students.',
       url: 'https://github.com/KishDelish/hkrhackathon_backend'
     },
     {
       picturePath: 'assets/my_page.png',
-      text: 'Your project 2 description',
-      topic: 'Hackathon',
-      url: 'https://project2.example.com'
+      text: 'A portfolio in a form of a webpage. A quick introduction to me and showing some of the works I\'ve done.',
+      topic: 'Portfolio',
+      url: 'https://github.com/lekatehdas/myWebPage'
     },
     {
       picturePath: 'path/to/your/image3.jpg',
-      text: 'Your project 3 description',
-      topic: 'Hackathon',
-      url: 'https://project3.example.com'
+      text: 'I developed an Android app to gather sensor data from android devices.',
+      topic: 'Random Generator',
+      url: 'https://github.com/lekatehdas/thesis_project'
     }
   ];
 
