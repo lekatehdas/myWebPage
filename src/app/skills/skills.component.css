@@ -14,7 +14,7 @@
 
 .adjustable-height {
   height: 50em;
-  background-color: var(--battleship-gray);
+  background: var(--forground_color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 1em; /* adjust as needed */
@@ -22,14 +22,12 @@
 
 .top-div {
   flex-basis: 20%;
-  background-color: rgba(255, 0, 0, 0.3);
   overflow: auto;
 }
 
 .bottom-div {
   flex-basis: 80%;
   display: flex;
-  background-color: rgba(0, 255, 0, 0.3);
 }
 
 .bottom-div > div {
@@ -37,25 +35,40 @@
 }
 
 .left-div {
-  flex-grow: 1;
+  flex-basis: 3em;
+  flex-shrink: 0;
   display: flex;
-  background-color: rgba(0, 0, 255, 0.3);
   justify-content: center;
   align-items: center;
+  width: 1em;
 }
 
 .middle-div {
-  flex-grow: 21;
-  background-color: rgba(255, 255, 0, 0.3);
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.top-row {
+  grid-row: 1;
+}
+
+.bottom-row {
+  grid-row: 2;
 }
 
 .right-div {
-  flex-grow: 1;
-  background-color: rgba(0, 255, 255, 0.3);
+  flex-basis: 3em;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 1em;
 }
 
 .spacer {
@@ -78,7 +91,7 @@
 
 
 .highlight {
-  color: #f00;
+  color: var(--forground_color);
 }
 
 

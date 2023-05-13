@@ -1,9 +1,9 @@
-<div class="page-min-height skills-container component-max-width" #scrollableElement>
+<div class="page-min-height skills-container component-max-width">
   <div class="movable-title">
     <h2>Skills</h2>
   </div>
 
-  <div class="component-max-width adjustable-height">
+  <div class="component-max-width adjustable-height" #scrollableElement>
 
     <div class="top-div">
       <p class="centered-text">{{ skillsPre }}</p>
@@ -15,16 +15,24 @@
         <p class="vertical-text">{{ skills[currentSkill].title }}</p>
       </div>
 
-      <div class="middle-div"></div>
+      <div class="middle-div">
+        <app-skill-card *ngFor="let skill of skills[currentSkill].items; let i = index"
+                        [ngClass]="{'top-row': i<4, 'bottom-row': i>=4}"
+                        [name]="skill.name"
+                        [icon]="skill.icon">
+        </app-skill-card>
+      </div>
 
-<div class="right-div">
-  <div class="spacer"></div> <!-- New spacer div -->
-  <div class="dash-container"> <!-- New dash container div -->
-    <div *ngFor="let skill of skills; let i = index"
-      [ngClass]="{'highlight': i === currentSkill, 'dash': true}">|</div>
-  </div>
-  <div class="spacer"></div> <!-- New spacer div -->
-</div>
+
+      <div class="right-div">
+        <div class="spacer"></div> <!-- New spacer div -->
+        <div class="dash-container"> <!-- New dash container div -->
+          <div *ngFor="let skill of skills; let i = index"
+               [ngClass]="{'highlight': i === currentSkill, 'dash': true}">|
+          </div>
+        </div>
+        <div class="spacer"></div> <!-- New spacer div -->
+      </div>
 
 
     </div>

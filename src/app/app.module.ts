@@ -15,6 +15,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { RouterModule } from "@angular/router";
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { WorkExperienceCardComponent } from './work-experience-card/work-experience-card.component';
+import { SkillCardComponent } from './skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { WorkExperienceCardComponent } from './work-experience-card/work-experie
     ProjectsComponent,
     NavbarComponent,
     ProjectCardComponent,
-    WorkExperienceCardComponent
+    WorkExperienceCardComponent,
+    SkillCardComponent
   ],
   imports: [
     BrowserModule,
