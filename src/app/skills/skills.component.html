@@ -16,21 +16,21 @@
         <p class="vertical-text">{{ skills[currentSkill].title }}</p>
       </div>
 
-      <div class="middle-div">
+      <div class="middle-div" [ngClass]="{'blurred': isBlurred}">
         <ng-container *ngFor="let skill of skills[currentSkill].items; let i = index;">
-          <app-skill-card [ngClass]="{'top-row': i<4, 'bottom-row': i>=4}"
-                          [name]="skill.name"
-                          [icon]="skill.icon">
+          <app-skill-card
+            [ngClass]="{'top-row': i<4, 'bottom-row': i>=4}"
+            [name]="skill.name"
+            [icon]="skill.icon">
           </app-skill-card>
         </ng-container>
       </div>
-
 
       <div class="right-div">
         <div class="spacer"></div> <!-- New spacer div -->
         <div class="dash-container"> <!-- New dash container div -->
           <div *ngFor="let skill of skills; let i = index"
-               [ngClass]="{'highlight': i === currentSkill, 'dash': true}">|
+               [ngClass]="{'highlight': i === currentSkill, 'dash': true}"> | 
           </div>
         </div>
         <div class="spacer"></div> <!-- New spacer div -->

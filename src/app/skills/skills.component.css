@@ -123,3 +123,18 @@
   text-shadow: 0 0 2px white;
 }
 
+.blurred {
+  animation: blurEffect 0.5s ease-in-out;
+}
+
+@keyframes blurEffect {
+  0% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(10px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}

@@ -1,13 +1,25 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
-
+  animations: [
+    trigger('blurInOut', [
+      transition(':enter', [
+        style({ filter: 'blur(5px)' }),
+        animate('0.5s 500ms ease-in-out', style({ filter: 'blur(0px)' }))
+      ]),
+      transition(':leave', [
+        animate('0.5s ease-in-out', style({ filter: 'blur(5px)' }))
+      ])
+    ])
+  ]
 })
 export class SkillsComponent implements AfterViewInit {
   @ViewChild('scrollableElement') scrollableElement!: ElementRef;
+  isBlurred = false;
   currentSkill = 0;
   skillsPre = 'My skills include proficiency in multiple programming languages, as well as experience in web development,\n' +
     '          databases, big data and machine learning technologies, software engineering, testing, and version control. I\'m\n' +
@@ -67,16 +79,23 @@ export class SkillsComponent implements AfterViewInit {
   constructor() {
   }
 
-  ngAfterViewInit() {
-    this.scrollableElement.nativeElement.addEventListener('wheel', (event: WheelEvent) => {
-      event.preventDefault();
-      if (event.deltaY > 0) {
-        this.currentSkill = this.currentSkill < this.skills.length - 1 ? this.currentSkill + 1 : 0;
-      } else {
-        this.currentSkill = this.currentSkill > 0 ? this.currentSkill - 1 : this.skills.length - 1;
-      }
-    });
-  }
-
+ngAfterViewInit() {
+  this.scrollableElement.nativeElement.addEventListener('wheel', (event: WheelEvent) => {
+    event.preventDefault();
+    if (!this.isBlurred) {
+      this.isBlurred = true;
+      setTimeout(() => {
+        if (event.deltaY > 0) {
+          this.currentSkill = this.currentSkill < this.skills.length - 1 ? this.currentSkill + 1 : 0;
+        } else {
+          this.currentSkill = this.currentSkill > 0 ? this.currentSkill - 1 : this.skills.length - 1;
+        }
+        setTimeout(() => {
+          this.isBlurred = false;
+        }, 250); // halfway through the animation duration
+      }, 250); // halfway through the animation duration
+    }
+  });
+}
 
 }
