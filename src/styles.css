@@ -68,7 +68,7 @@ html {
 }
 
 .page-min-height {
-  min-height: 66vh;
+  min-height: 80vh;
 }
 
 @keyframes fade-out {

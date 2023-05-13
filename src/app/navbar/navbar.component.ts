@@ -17,43 +17,40 @@ export class NavbarComponent implements OnInit {
     }
   }
 
-@HostListener('window:scroll', [])
-onWindowScroll(): void {
-  const yOffset = window.pageYOffset;
-  const activeOffset = 100; // adjust this value to change the point at which a section becomes active
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    const yOffset = window.pageYOffset;
+    const activeOffset = 100; // adjust this value to change the point at which a section becomes active
 
-  const sections = [
-    'about',
-    'skills',
-    'projects',
-    'resume',
-    'contact'
-  ];
+    const sections = [
+      'about',
+      'skills',
+      'projects',
+      'resume',
+      'contact'
+    ];
 
-  for (const section of sections) {
-    const element = document.getElementById(section);
-    if (element) {
-      const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
-      const elementBottom = elementTop + element.offsetHeight;
-      if (yOffset >= elementTop - this.navbarHeight - activeOffset && yOffset < elementBottom - this.navbarHeight - activeOffset) {
-        this.activeLink = section;
-        break;
+    for (const section of sections) {
+      const element = document.getElementById(section);
+      if (element) {
+        const elementTop = element.getBoundingClientRect().top + window.pageYOffset;
+        const elementBottom = elementTop + element.offsetHeight;
+        if (yOffset >= elementTop - this.navbarHeight - activeOffset && yOffset < elementBottom - this.navbarHeight - activeOffset) {
+          this.activeLink = section;
+          break;
+        }
       }
     }
   }
-}
 
-
-
-
-scrollToElement(event: MouseEvent, elementId: string): void {
-  event.preventDefault();
-  const element = document.getElementById(elementId);
-  const yOffset = this.navbarHeight * 2;
-  if (element) {
-    const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
-    console.log(`yOffset: ${yOffset}, y: ${y}`);
-    window.scrollTo({top: y, behavior: 'smooth'});
+  scrollToElement(event: MouseEvent, elementId: string): void {
+    event.preventDefault();
+    const element = document.getElementById(elementId);
+    const yOffset = this.navbarHeight * 2;
+    if (element) {
+      const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+      console.log(`yOffset: ${yOffset}, y: ${y}`);
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
   }
-}
 }

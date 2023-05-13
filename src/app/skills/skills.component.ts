@@ -1,18 +1,18 @@
-import {Component, HostListener, OnInit} from '@angular/core';
-import {fadeInAnimation, blurInAnimation} from "../animations/animations";
-import {ViewportScroller} from '@angular/common';
+import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css'],
-  animations: [fadeInAnimation, blurInAnimation]
+  styleUrls: ['./skills.component.css']
 
 })
-export class SkillsComponent implements OnInit {
-  currentSkill = -1;
-  isVisible = false;
-
+export class SkillsComponent implements AfterViewInit {
+  @ViewChild('scrollableElement') scrollableElement!: ElementRef;
+  currentSkill = 0;
+  skillsPre = 'My skills include proficiency in multiple programming languages, as well as experience in web development,\n' +
+    '          databases, big data and machine learning technologies, software engineering, testing, and version control. I\'m\n' +
+    '          eager to apply these skills to real-world applications and tackle the challenges that come with them. I\'m\n' +
+    '          particularly interested in computer security and testing.'
   skills = [
     {
       title: 'Programming Languages',
@@ -36,34 +36,17 @@ export class SkillsComponent implements OnInit {
     }
   ];
 
-  constructor(private viewportScroller: ViewportScroller) {
+  constructor() {
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
+    this.scrollableElement.nativeElement.addEventListener('wheel', (event: WheelEvent) => {
+      event.preventDefault();
+      if (event.deltaY > 0) {
+        this.currentSkill = this.currentSkill < this.skills.length - 1 ? this.currentSkill + 1 : 0;
+      } else {
+        this.currentSkill = this.currentSkill > 0 ? this.currentSkill - 1 : this.skills.length - 1;
+      }
+    });
   }
-
-checkVisibility(): void {
-  const skillsElement = document.getElementById('skills');
-  const projectsElement = document.getElementById('projects');
-  if (skillsElement && projectsElement) {
-    const skillsRect = skillsElement.getBoundingClientRect();
-    const projectsRect = projectsElement.getBoundingClientRect();
-    const scrollPosition = this.viewportScroller.getScrollPosition()[1];
-
-    const halfwayPoint = projectsRect.top + (projectsRect.height / 2);
-
-    this.isVisible = (skillsRect.top <= scrollPosition + 100 &&
-      skillsRect.bottom > scrollPosition + 100) ||
-      (scrollPosition < halfwayPoint && scrollPosition >= projectsRect.top);
-  }
-}
-
-
-
-  @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    this.checkVisibility();
-  }
-
-
 }

@@ -1,24 +1,34 @@
-<div class="background-skill page-min-height" [@fadeIn]>
-  <div class="container component-max-width">
-    <div class="skills-texts" animate-me>
-      <h2>Skills</h2>
-      <p>
-        My skills include proficiency in multiple programming languages, as well as experience in web development,
-        databases, big data and machine learning technologies, software engineering, testing, and version control. I'm
-        eager to apply these skills to real-world applications and tackle the challenges that come with them. I'm
-        particularly interested in computer security and testing.
-      </p>
-    </div>
-    <div class="skills">
-      <div *ngFor="let skill of skills; index as i" class="skill">
-        <div class="skill-container" [@blurIn]="isVisible ? 'focus' : 'blur'">
-          <h2>{{skill.title}}</h2>
-          <ul>
-            <li *ngFor="let item of skill.items">{{item}}</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
+<div class="page-min-height skills-container component-max-width" #scrollableElement>
+  <div class="movable-title">
+    <h2>Skills</h2>
   </div>
+
+  <div class="component-max-width adjustable-height">
+
+    <div class="top-div">
+      <p class="centered-text">{{ skillsPre }}</p>
+    </div>
+
+    <div class="bottom-div">
+
+      <div class="left-div">
+        <p class="vertical-text">{{ skills[currentSkill].title }}</p>
+      </div>
+
+      <div class="middle-div"></div>
+
+<div class="right-div">
+  <div class="spacer"></div> <!-- New spacer div -->
+  <div class="dash-container"> <!-- New dash container div -->
+    <div *ngFor="let skill of skills; let i = index"
+      [ngClass]="{'highlight': i === currentSkill, 'dash': true}">|</div>
+  </div>
+  <div class="spacer"></div> <!-- New spacer div -->
+</div>
+
+
+    </div>
+
+  </div>
+
 </div>
