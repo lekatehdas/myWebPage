@@ -5,9 +5,10 @@
   --jet: #323232;
   --drab-dark-brown: #493e2d;
   --platinum: #e4e4e2;
-  --background_color: #332323;
   --forground_color: #332323FF;
-  --body_background_color: #1e1414;
+  --background_color: #1e1414;
+  --contrast: #FAA613;
+  --skill-list-card: #332323;
 }
 
 
@@ -34,7 +35,7 @@ router-outlet {
 }
 
 body {
-  background-color: var(--body_background_color);
+  background-color: var(--background_color);
   color: #fff;
 }
 

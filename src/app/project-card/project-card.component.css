@@ -5,7 +5,7 @@
   justify-content: flex-start;
   width: 75em;
   height: 40em;
-  background-color: rgb(95, 65, 57);
+  background-color: var(--forground_color);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(98, 84, 61, 0.3);
   transition: transform 1s ease-in-out;
@@ -31,11 +31,6 @@
   font-weight: bold;
   font-size: 2em;
   transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.project-details h3.zoomed {
-  color: rgb(204, 252, 203);
-  transform: translateX(10px);
 }
 
 .project-details p {

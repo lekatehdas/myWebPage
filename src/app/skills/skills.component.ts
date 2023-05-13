@@ -3,7 +3,7 @@ import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
 
 })
 export class SkillsComponent implements AfterViewInit {
@@ -77,4 +77,6 @@ export class SkillsComponent implements AfterViewInit {
       }
     });
   }
+
+
 }

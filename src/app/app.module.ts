@@ -28,7 +28,7 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
     NavbarComponent,
     ProjectCardComponent,
     WorkExperienceCardComponent,
-    SkillCardComponent
+    SkillCardComponent,
   ],
   imports: [
     BrowserModule,

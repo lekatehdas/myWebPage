@@ -25,6 +25,15 @@
   overflow: auto;
 }
 
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  margin: 0 3em;
+}
+
 .bottom-div {
   flex-basis: 80%;
   display: flex;
@@ -41,6 +50,13 @@
   justify-content: center;
   align-items: center;
   width: 1em;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: 500;
+  font-size: 1.5em;
 }
 
 .middle-div {
@@ -91,22 +107,7 @@
 
 
 .highlight {
-  color: var(--forground_color);
-}
-
-
-.centered-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  text-align: center;
-  margin: 0 3em;
-}
-
-.vertical-text {
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
+  color: var(--contrast);
 }
 
 .movable-title {
