@@ -1,6 +1,5 @@
 .skill-card {
   background-color: rgb(100, 72, 72);
-  margin: 1em;
   display: flex;
   flex-direction: column;
   height: 15em;
@@ -15,7 +14,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin: 2em;
+  margin: 1em;
 }
 
 .skill-icon {

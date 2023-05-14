@@ -29,7 +29,6 @@
   position: absolute;
   z-index: 1;
   top: 13%;
-  right: -3%;
 }
 
 .movable-text h2 {
@@ -85,6 +84,7 @@
   height: 5em;
   margin-top: 2em;
   position: relative;
+  left: 25%;
 }
 
 .form-button span {

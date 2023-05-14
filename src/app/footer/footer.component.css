@@ -1,0 +1,61 @@
+.footer-container {
+  height: 15em;
+  background: var(--forground_color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 4em;
+  line-height: 1.2;
+  font-weight: bold;
+  color: var(--platinum);
+}
+
+.social-media {
+  display: flex;
+  gap: 1em;
+}
+
+.social-media a {
+  display: inline-block;
+}
+
+.icon {
+  width: 3em;
+  height: 3em;
+  filter: invert(61%) sepia(83%) saturate(544%) hue-rotate(351deg) brightness(102%) contrast(96%);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.copyright {
+  font-size: 1em;
+  color: var(--platinum);
+}
+
+.icon-credit {
+  font-size: 0.8em;
+  color: var(--platinum);
+}
+
+.icon-credit a {
+  color: var(--platinum);
+  text-decoration: none;
+}
+
+.icon-credit a:hover {
+  text-decoration: underline;
+}

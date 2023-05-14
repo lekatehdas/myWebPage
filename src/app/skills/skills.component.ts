@@ -9,10 +9,7 @@ export class SkillsComponent implements AfterViewInit {
   @ViewChild('scrollableElement') scrollableElement!: ElementRef;
   isBlurred = false;
   currentSkill = 0;
-  skillsPre = 'My skills include proficiency in multiple programming languages, as well as experience in web development,\n' +
-    '          databases, big data and machine learning technologies, software engineering, testing, and version control. I\'m\n' +
-    '          eager to apply these skills to real-world applications and tackle the challenges that come with them. I\'m\n' +
-    '          particularly interested in computer security and testing.'
+  skillsPre = 'Here are skills that I have become familiar with throughout my work life and education'
   skills = [
     {
       title: 'Programming Languages',

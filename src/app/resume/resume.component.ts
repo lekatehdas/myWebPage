@@ -43,7 +43,7 @@ export class ResumeComponent implements OnInit {
     },
     {
       title: 'Private Security Industry',
-      company: 'Multiple',
+      company: 'Multiple Companies',
       duration: '2006 - 2014',
       icon: 'assets/icons/security.png'
     }
