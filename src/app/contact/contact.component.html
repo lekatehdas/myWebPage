@@ -1,5 +1,4 @@
 <div class="page-min-height contact-container component-max-width">
-
   <div class="movable-text">
     <h2>Contact</h2>
     <p class="adjustable-text">
@@ -10,15 +9,37 @@
   </div>
 
   <div class="component-max-width adjustable-height">
+    <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" id="name" required [(ngModel)]="name" name="name" class="form-input" #nameField="ngModel">
+      <div *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)" class="alert">
+        <div *ngIf="nameField.errors?.['required']">
+          Name is required.
+        </div>
+      </div>
 
+      <label for="contactInfo" class="form-label">Email Address</label>
+      <input type="text" id="contactInfo" required [(ngModel)]="contactInfo" name="contactInfo" class="form-input"
+             #emailField="ngModel">
+      <div *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)" class="alert">
+        <div *ngIf="emailField.errors?.['required']">
+          Email is required.
+        </div>
+      </div>
 
+      <label for="message" class="form-label">Message</label>
+      <textarea id="message" required [(ngModel)]="message" name="message" class="form-input form-textarea"
+                #messageField="ngModel"></textarea>
+      <div *ngIf="messageField.invalid && (messageField.dirty || messageField.touched)" class="alert">
+        <div *ngIf="messageField.errors?.['required']">
+          Message is required.
+        </div>
+      </div>
 
-    <a href="assets/Aki_Sirkia_CV.pdf" download class="send-button">
-      <img src="assets/icons/send.png" class="send-icon" alt="Send Icon">
-      <span>Contact</span>
-    </a>
-
-
+      <button type="submit" class="form-button">
+        <span>Contact</span>
+        <img src="assets/icons/send.png" class="send-icon" alt="Send Icon">
+      </button>
+    </form>
   </div>
-
 </div>

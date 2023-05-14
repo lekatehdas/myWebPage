@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  discordWebhook: 'https://discord.com/api/webhooks/1107280140792254526/oFHfpzemVjsp8SgsWm5O_EBWy6Ak-O1qyZAciBth4VNmbPVYlL0e4Pe0dqYjJqbuE0wg'
 };
 
 /*

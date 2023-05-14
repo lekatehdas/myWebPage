@@ -17,6 +17,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { WorkExperienceCardComponent } from './work-experience-card/work-experience-card.component';
 import { SkillCardComponent } from './skill-card/skill-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {NgForm} from '@angular/forms';
+import {HttpClient} from '@angular/common/http';
+import {environment} from "../../environments/environment";
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +9,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  name!: string;
+  contactInfo!: string;
+  message!: string;
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+  }
 
   ngOnInit(): void {
   }
 
+  onSubmit(form: NgForm): void {
+    if (form.valid) {
+      const payload = {
+        content: `Name: ${this.name}\nContact Info: ${this.contactInfo}\nMessage: ${this.message}`
+      };
+      this.http.post(environment.discordWebhook, payload).subscribe(
+        response => {
+          // Reset form after successful post
+          form.reset();
+        },
+        error => {
+          console.error('There was an error!', error);
+        }
+      );
+    }
+  }
 }
