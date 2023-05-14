@@ -23,8 +23,8 @@ export class ProjectsComponent implements OnInit {
       url: 'https://github.com/lekatehdas/myWebPage'
     },
     {
-      picturePath: 'path/to/your/image3.jpg',
-      text: 'I developed an Android app to gather sensor data from android devices.',
+      picturePath: 'assets/random_generator.png',
+      text: 'I developed an Android app to gather sensor and other user inputted data from android devices.',
       topic: 'Random Data Gatherer',
       url: 'https://github.com/lekatehdas/thesis_project'
     }
@@ -53,5 +53,4 @@ export class ProjectsComponent implements OnInit {
       setTimeout(() => this.animationClass = '', this.timeOut);
     }, this.timeOut);
   }
-
 }
