@@ -6,6 +6,27 @@
   --skill-list-card: #332323;
 }
 
+@media only screen and (max-width: 600px) {
+  .component-max-width {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .page-min-height {
+    min-height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .component-max-width {
+    max-width: 80em;
+    margin: 0 auto;
+  }
+
+  .page-min-height {
+    min-height: 80vh;
+  }
+}
 
 html,
 body {
@@ -56,13 +77,4 @@ app-contact {
 
 html {
   scroll-behavior: smooth;
-}
-
-.component-max-width {
-  max-width: 80em;
-  margin: 0 auto;
-}
-
-.page-min-height {
-  min-height: 80vh;
 }

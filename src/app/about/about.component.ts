@@ -4,7 +4,7 @@ import { fadeInFromLeft, fadeInFromRight, fadeInFromRightDelayed } from '../anim
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
+  styleUrls: ['./about.component.css', "./about.mobile.css"],
   animations: [fadeInFromLeft, fadeInFromRight, fadeInFromRightDelayed]
 })
 export class AboutComponent implements OnInit {
