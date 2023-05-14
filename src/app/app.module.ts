@@ -16,6 +16,7 @@ import { RouterModule } from "@angular/router";
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { WorkExperienceCardComponent } from './work-experience-card/work-experience-card.component';
 import { SkillCardComponent } from './skill-card/skill-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
     ProjectCardComponent,
     WorkExperienceCardComponent,
     SkillCardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

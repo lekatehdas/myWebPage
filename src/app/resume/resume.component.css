@@ -43,13 +43,12 @@
 
 .download-button {
   position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 200px;
-  height: 50px;
-  margin: 20px auto;
+  right: 1em;
+  bottom: 1em;
+  width: 12em;
+  height: 3em;
+  margin: 1em auto;
   background: var(--background_color);
-  padding: 10px;
   text-align: center;
   border-radius: 5px;
   color: var(--contrast);
@@ -57,15 +56,30 @@
   line-height: 25px;
   text-decoration: none;
   transition: 1s;
-  box-shadow: 0 1px 7px var(--contrast);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.download-button span {
+  order: 1; /* The text should come first */
 }
 
 .download-button:hover {
   background: var(--contrast);
   color: var(--background_color);
+}
+.download-button:hover .download-icon{
+  filter: none;
+}
+
+.download-icon {
+  height: calc(100% - 1em);
+  width: auto;
+  order: 2;
+  filter: invert(61%) sepia(83%) saturate(544%) hue-rotate(351deg) brightness(102%) contrast(96%);
+  transition: 1s;
 }
 
 .work-experience-list {
