@@ -9,4 +9,5 @@ export class WorkExperienceCardComponent {
   @Input() jobTitle!: string;
   @Input() company!: string;
   @Input() duration!: string;
+  @Input() icon!: string;
 }

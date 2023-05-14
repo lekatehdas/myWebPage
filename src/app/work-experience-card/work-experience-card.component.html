@@ -1,5 +1,10 @@
 <div class="card">
-  <h3>{{ company }}</h3>
-  <span>{{ jobTitle }}</span>
-  <p>{{ duration }}</p>
+  <div class="card-content">
+    <img class="card-icon" [src]="icon" alt="Company Icon">
+    <div class="card-text">
+      <h3>{{ company }}</h3>
+      <span>{{ jobTitle }}</span>
+      <p>{{ duration }}</p>
+    </div>
+  </div>
 </div>

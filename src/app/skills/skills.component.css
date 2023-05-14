@@ -67,6 +67,7 @@
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
+  margin: 0 1em 1em 1em;
 }
 
 .top-row {
@@ -101,9 +102,13 @@
 
 .dash {
   font-size: 2em;
-  color: #000;
+  font-weight: bold;
+  color: var(--background_color);
   line-height: 1.5;
+  padding: 10px; /* adjust as needed */
+  cursor: pointer;
 }
+
 
 
 .highlight {
@@ -121,20 +126,4 @@
   margin-bottom: 0.5em;
   font-weight: bold;
   text-shadow: 0 0 2px white;
-}
-
-.blurred {
-  animation: blurEffect 0.5s ease-in-out;
-}
-
-@keyframes blurEffect {
-  0% {
-    filter: blur(0px);
-  }
-  50% {
-    filter: blur(10px);
-  }
-  100% {
-    filter: blur(0px);
-  }
 }

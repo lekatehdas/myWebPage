@@ -9,14 +9,13 @@
       <p class="centered-text">{{ skillsPre }}</p>
     </div>
 
-
     <div class="bottom-div">
 
       <div class="left-div">
         <p class="vertical-text">{{ skills[currentSkill].title }}</p>
       </div>
 
-      <div class="middle-div" [ngClass]="{'blurred': isBlurred}">
+      <div class="middle-div">
         <ng-container *ngFor="let skill of skills[currentSkill].items; let i = index;">
           <app-skill-card
             [ngClass]="{'top-row': i<4, 'bottom-row': i>=4}"
@@ -27,15 +26,15 @@
       </div>
 
       <div class="right-div">
-        <div class="spacer"></div> <!-- New spacer div -->
-        <div class="dash-container"> <!-- New dash container div -->
+        <div class="spacer"></div>
+        <div class="dash-container">
           <div *ngFor="let skill of skills; let i = index"
-               [ngClass]="{'highlight': i === currentSkill, 'dash': true}"> | 
+               (click)="setCurrentSkill(i)"
+               [ngClass]="{'highlight': i === currentSkill, 'dash': true}"> |
           </div>
         </div>
-        <div class="spacer"></div> <!-- New spacer div -->
+        <div class="spacer"></div>
       </div>
-
 
     </div>
 

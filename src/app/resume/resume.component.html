@@ -1,20 +1,24 @@
-<div class="resume-container component-max-width page-min-height">
-  <div class="resume-section">
-    <h1>Resume</h1>
-    <h3>Education</h3>
-    <p>{{ education }}</p>
+<div class="page-min-height resume-container component-max-width">
+
+  <div class="movable-text">
+    <h2>Resume</h2>
+    <p class="adjustable-text">Here are some of the things I've done so far..</p>
   </div>
 
-  <div class="resume-section work-experience-header">
-    <h3>Work Experience</h3>
+  <div class="component-max-width adjustable-height">
+
+    <div class="work-experience-list">
+      <app-work-experience-card
+        *ngFor="let job of workExperience"
+        [jobTitle]="job.title"
+        [company]="job.company"
+        [duration]="job.duration"
+        [icon]="job.icon">
+      </app-work-experience-card>
+    </div>
+
+    <a href="assets/Aki_Sirkia_CV.pdf" download class="download-button"><span>Download CV</span></a>
+
   </div>
-  <div class="work-experience-list">
-    <app-work-experience-card
-      *ngFor="let job of workExperience"
-      [jobTitle]="job.title"
-      [company]="job.company"
-      [duration]="job.duration">
-    </app-work-experience-card>
-  </div>
-  <a href="assets/Aki_Sirkia_CV.pdf" download class="download-button">Download CV</a>
+
 </div>

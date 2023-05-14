@@ -4,7 +4,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 75em;
-  height: 40em;
+  height: 50em;
   background-color: var(--forground_color);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(98, 84, 61, 0.3);
