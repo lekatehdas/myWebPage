@@ -1,6 +1,9 @@
-<div class="skill-card">
+<div class="skill-card"
+     [ngStyle]="{
+     'background-color': icon ? '' : 'var(--forground_color)',
+     'box-shadow': icon ? '' : 'none'}">
   <div class="icon-container">
-    <img [src]="icon" alt="{{name}}" class="skill-icon">
+    <img *ngIf="icon" [src]="icon" alt="{{name}}" class="skill-icon">
   </div>
   <div class="name-container">
     <p>{{name}}</p>

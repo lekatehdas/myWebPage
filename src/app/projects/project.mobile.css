@@ -1,0 +1,38 @@
+@media only screen and (max-width: 600px) {
+
+  .page-min-height {
+    height: 75vh;
+  }
+
+  .text-container {
+    top: 10%;
+    left: 45%;
+    background: initial;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+
+  p {
+    font-size: 0.7em;
+  }
+
+  .arrow-icon {
+    height: 3em;
+    width: 3em;
+  }
+
+  .arrow-button {
+    top: 20%;
+  }
+
+  .left-arrow {
+    left: 5%;
+  }
+
+  .right-arrow {
+    right: 56%;
+  }
+
+}

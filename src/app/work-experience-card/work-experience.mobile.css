@@ -1,0 +1,26 @@
+@media only screen and (max-width: 600px) {
+
+  .card .card-content .card-icon {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    box-shadow: 0 0 10px rgba(141, 141, 141, 0.2);
+  }
+
+  .card h3 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .card p {
+    margin-bottom: 0;
+  }
+
+  .card span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0;
+  }
+
+}

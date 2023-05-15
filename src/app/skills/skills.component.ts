@@ -3,7 +3,7 @@ import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css', './skills.mobile.css']
 })
 export class SkillsComponent implements AfterViewInit {
   @ViewChild('scrollableElement') scrollableElement!: ElementRef;
@@ -38,6 +38,8 @@ export class SkillsComponent implements AfterViewInit {
         {name: 'MySQL', icon: 'assets/icons/mysql.svg'},
         {name: 'MongoDB', icon: 'assets/icons/mongodb.svg'},
         {name: 'Firebase', icon: 'assets/icons/firebase.svg'},
+        {name: '', icon: ''},
+        {name: '', icon: ''},
       ]
     },
     {
@@ -46,7 +48,8 @@ export class SkillsComponent implements AfterViewInit {
         {name: 'TensorFlow', icon: 'assets/icons/tensorflow.svg'},
         {name: 'Hadoop', icon: 'assets/icons/hadoop.svg'},
         {name: 'Spark', icon: 'assets/icons/apache-spark.svg'},
-        {name: 'Scikit-learn', icon: 'assets/icons/scikit-learn.svg'}
+        {name: 'Scikit-learn', icon: 'assets/icons/scikit-learn.svg'},
+        {name: '', icon: ''},
       ]
     },
     {

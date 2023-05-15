@@ -74,15 +74,15 @@
 
 .top-row {
   display: flex;
-  align-items: center; /* Aligns vertically */
-  justify-content: center; /* Aligns horizontally */
+  align-items: center;
+  justify-content: center;
   grid-row: 1;
 }
 
 .bottom-row {
   display: flex;
-  align-items: start; /* Aligns to the top vertically */
-  justify-content: center; /* Aligns horizontally */
+  align-items: start;
+  justify-content: center;
   grid-row: 2;
 }
 

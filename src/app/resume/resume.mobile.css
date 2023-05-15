@@ -1,0 +1,71 @@
+@media only screen and (max-width: 600px) {
+  .resume-container {
+    padding-top: 10vh;
+  }
+
+  .adjustable-height {
+    height: 95vh;
+  }
+
+  .movable-text {
+    top: 8%;
+    left: 1%;
+  }
+
+  .movable-text h2 {
+    font-size: 4em;
+    text-shadow: none;
+  }
+
+  .work-experience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding-left: 1em;
+    margin: auto;
+  }
+
+  .download-button {
+    position: absolute;
+    right: 34%;
+    bottom: 2%;
+    width: 9em;
+    height: 2em;
+    margin: 0;
+    background: var(--background_color);
+    text-align: center;
+    border-radius: 5px;
+    color: var(--contrast);
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration: none;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+  }
+
+  .download-button span {
+    order: 1;
+  }
+
+  .download-button:hover {
+    background: var(--contrast);
+    color: var(--background_color);
+  }
+
+  .download-button:hover .download-icon {
+    filter: none;
+  }
+
+  .download-icon {
+    height: calc(100% - 1em);
+    width: auto;
+    order: 2;
+    filter: invert(61%) sepia(83%) saturate(544%) hue-rotate(351deg) brightness(102%) contrast(96%);
+    transition: 1s;
+  }
+
+
+}

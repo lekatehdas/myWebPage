@@ -3,7 +3,7 @@ import {Component, OnInit, Type} from '@angular/core';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css', './project.mobile.css']
 })
 export class ProjectsComponent implements OnInit {
   currentProject = 0;

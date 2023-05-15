@@ -5,7 +5,9 @@
     <p>Take a look at some of my work, click to get to the GitHub</p>
   </div>
 
-  <button class="arrow-button left-arrow" (click)="previousProject()">&lt;</button>
+  <button class="arrow-button left-arrow" (click)="previousProject()">
+    <img src="assets/icons/left.png" alt="Previous" class="arrow-icon">
+  </button>
 
   <div class="project-display">
     <ng-container *ngFor="let project of projects; index as i">
@@ -23,5 +25,7 @@
     </ng-container>
   </div>
 
-  <button class="arrow-button right-arrow" (click)="nextProject()">&gt;</button>
+  <button class="arrow-button right-arrow" (click)="nextProject()">
+    <img src="assets/icons/right.png" alt="Next" class="arrow-icon">
+  </button>
 </div>

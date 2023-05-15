@@ -1,0 +1,6 @@
+@media only screen and (max-width: 600px) {
+  .skill-card {
+    height: 11em;
+    width: 10em;
+  }
+}

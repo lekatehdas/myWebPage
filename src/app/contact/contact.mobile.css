@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+
+  .contact-container {
+    padding-top: 10vh;
+  }
+
+  .adjustable-height {
+    background: var(--background_color);
+    height: 95vh;
+  }
+
+  .movable-text {
+    top: 7%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .movable-text h2 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+  }
+
+  .movable-text p {
+    text-align: center;
+    max-width: 20vh;
+    margin-bottom: 1vh;
+  }
+
+  .contact-form {
+    width: 75%;
+  }
+
+  .form-button {
+    left: 18%;
+    background: var(--contrast);
+    color: var(--background_color);
+  }
+
+  .send-icon {
+    filter: initial;
+  }
+}

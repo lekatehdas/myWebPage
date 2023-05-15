@@ -13,7 +13,7 @@
   }
 
   .page-min-height {
-    min-height: 40vh;
+    height: 95vh;
   }
 }
 
@@ -60,11 +60,6 @@ body {
   src: url('assets/fonts/Lato-Regular.ttf');
   font-weight: normal;
   font-style: normal;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
 }
 
 app-about,
