@@ -1,4 +1,31 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 280px) and (max-width: 460px) {
+
+  .skill-card {
+    height: 15vh;
+    width: 13vh;
+  }
+
+  .icon-container {
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0.4em;
+  }
+
+  .name-container {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+}
+
+@media only screen and (min-width: 460px) and (max-width: 600px) {
   .skill-card {
     height: 11em;
     width: 10em;

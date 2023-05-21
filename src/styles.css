@@ -7,14 +7,16 @@
 }
 
 @media only screen and (max-width: 600px) {
+
   .component-max-width {
-    max-width: 100%;
+    max-width: 20em;
     margin: 0 auto;
   }
 
   .page-min-height {
     height: 95vh;
   }
+
 }
 
 @media only screen and (min-width: 1020px) {

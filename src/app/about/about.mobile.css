@@ -1,18 +1,19 @@
 @media only screen and (min-width: 280px) and (max-width: 460px) {
 
   .about-container {
-    max-width: 80%;
+    max-width: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     position: relative;
+    margin-left: 8vh;
   }
 
   .profile-picture-container {
-    width: 35vh;
-    height: 35vh;
+    width: 30vh;
+    height: 30vh;
     animation: fadeInFromLeft 2s;
   }
 

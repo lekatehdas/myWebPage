@@ -61,6 +61,7 @@
   transform: rotate(180deg);
   font-weight: 500;
   font-size: 1.5em;
+  text-align: center;
 }
 
 .middle-div {
@@ -85,8 +86,6 @@
   justify-content: center;
   grid-row: 2;
 }
-
-
 
 .right-div {
   flex-basis: 3em;

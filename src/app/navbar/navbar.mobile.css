@@ -1,4 +1,37 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 280px) and (max-width: 460px) {
+
+  .navbar a {
+    font-size: 0.6em;
+    justify-content: flex-start;
+  }
+  .navbar a, .navbar button {
+    padding: 0;
+    margin: 0;
+  }
+
+  .mat-button {
+    padding: 0 !important;
+  }
+
+
+  .mat-button-wrapper {
+    padding: 0 !important;
+  }
+
+
+  .name {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 460px) and (max-width: 600px) {
 
   .navbar a {
     font-size: 0.7em;
