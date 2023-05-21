@@ -49,24 +49,6 @@
   margin-left: 8em;
 }
 
-@media (max-width: 48em) {
-  .profile-picture-container {
-    width: 12.5em;
-    height: 12.5em;
-    margin-right: 1em;
-  }
-
-  .profile-picture {
-    border-radius: 0.625em;
-  }
-
-  .about-text {
-    text-align: center;
-    font-size: 1.5em;
-  }
-}
-
-
 @keyframes fade-out {
   from { opacity: 1; }
   to { opacity: 0; }
