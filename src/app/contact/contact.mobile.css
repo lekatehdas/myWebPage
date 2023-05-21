@@ -5,7 +5,7 @@
   }
 
   .adjustable-height {
-    background: var(--background_color);
+    background: var(--background-color);
     height: 95vh;
   }
 
@@ -34,8 +34,8 @@
 
   .form-button {
     left: 18%;
-    background: var(--contrast);
-    color: var(--background_color);
+    background: var(--contrast-color);
+    color: var(--background-color);
   }
 
   .send-icon {

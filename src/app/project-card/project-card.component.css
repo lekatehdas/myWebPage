@@ -5,7 +5,7 @@
   justify-content: flex-start;
   width: 75em;
   height: 50em;
-  background-color: var(--forground_color);
+  background-color: var(--foreground-color);
   border-radius: 20px;
   box-shadow: 0 2px 5px rgba(98, 84, 61, 0.3);
   transition: transform 1s ease-in-out;

@@ -32,10 +32,10 @@
     width: 9em;
     height: 2em;
     margin: 0;
-    background: var(--background_color);
+    background: var(--background-color);
     text-align: center;
     border-radius: 5px;
-    color: var(--contrast);
+    color: var(--contrast-color);
     font-weight: 700;
     line-height: 25px;
     text-decoration: none;
@@ -51,8 +51,8 @@
   }
 
   .download-button:hover {
-    background: var(--contrast);
-    color: var(--background_color);
+    background: var(--contrast-color);
+    color: var(--background-color);
   }
 
   .download-button:hover .download-icon {

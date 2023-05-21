@@ -15,7 +15,7 @@
 
 .adjustable-height {
   height: 50em;
-  background: var(--forground_color);
+  background: var(--foreground-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 1em;
@@ -48,10 +48,10 @@
   width: 12em;
   height: 3em;
   margin: 1em auto;
-  background: var(--background_color);
+  background: var(--background-color);
   text-align: center;
   border-radius: 5px;
-  color: var(--contrast);
+  color: var(--contrast-color);
   font-weight: 700;
   line-height: 25px;
   text-decoration: none;
@@ -67,8 +67,8 @@
 }
 
 .download-button:hover {
-  background: var(--contrast);
-  color: var(--background_color);
+  background: var(--contrast-color);
+  color: var(--background-color);
 }
 .download-button:hover .download-icon{
   filter: none;

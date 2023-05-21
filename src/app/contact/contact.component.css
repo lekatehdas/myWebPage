@@ -18,7 +18,7 @@
 
 .adjustable-height {
   height: 50em;
-  background: var(--forground_color);
+  background: var(--foreground-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 1em;
@@ -46,7 +46,7 @@
 }
 
 .form-label {
-  color: var(--contrast);
+  color: var(--contrast-color);
   font-weight: 500;
   margin-top: 1em;
   margin-bottom: 0.5em;
@@ -56,8 +56,8 @@
   padding: 0.5em;
   border: none;
   border-radius: 5px;
-  background-color: var(--platinum);
-  color: var(--background_color);
+  background-color: var(--text-color);
+  color: var(--background-color);
 }
 
 
@@ -68,8 +68,8 @@
 
 .form-button {
   padding: 1em 2em;
-  background: var(--background_color);
-  color: var(--contrast);
+  background: var(--background-color);
+  color: var(--contrast-color);
   border: none;
   border-radius: 5px;
   font-weight: 700;
@@ -92,8 +92,8 @@
 }
 
 .form-button:hover {
-  background: var(--contrast);
-  color: var(--background_color);
+  background: var(--contrast-color);
+  color: var(--background-color);
 }
 
 .send-icon {

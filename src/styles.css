@@ -1,9 +1,9 @@
 :root {
-  --platinum: #e4e4e2;
-  --forground_color: #332323FF;
-  --background_color: #1e1414;
-  --contrast: #FAA613;
-  --skill-list-card: #332323;
+  --text-color: #e4e4e2;
+  --foreground-color: #332323FF;
+  --background-color: #1e1414;
+  --top-card-color: #332323;
+  --contrast-color: #FAA613;
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,8 +51,8 @@ router-outlet {
 }
 
 body {
-  background-color: var(--background_color);
-  color: var(--platinum);
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 @font-face {

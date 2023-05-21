@@ -14,7 +14,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ]),
     trigger('colorChange', [
       state('in', style({ color: '#fff' })),
-      state('out', style({ color: 'var(--contrast)' })),
+      state('out', style({ color: 'var(--contrast-color)' })),
       transition('in <=> out', animate('300ms ease-in-out'))
     ]),
     trigger('textMove', [

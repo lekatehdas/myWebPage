@@ -1,6 +1,6 @@
 .footer-container {
   height: 15em;
-  background: var(--forground_color);
+  background: var(--foreground-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@
   font-size: 4em;
   line-height: 1.2;
   font-weight: bold;
-  color: var(--platinum);
+  color: var(--text-color);
 }
 
 .social-media {
@@ -43,16 +43,16 @@
 
 .copyright {
   font-size: 1em;
-  color: var(--platinum);
+  color: var(--text-color);
 }
 
 .icon-credit {
   font-size: 0.8em;
-  color: var(--platinum);
+  color: var(--text-color);
 }
 
 .icon-credit a {
-  color: var(--platinum);
+  color: var(--text-color);
   text-decoration: none;
 }
 
