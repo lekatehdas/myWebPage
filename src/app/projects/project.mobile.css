@@ -1,4 +1,67 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 460px) {
+
+  .component-max-width {
+    width: 100%;
+  }
+
+  .projects-container {
+    padding-bottom: 5vh;
+  }
+
+  .text-container {
+    max-width: 20vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+
+  .text-container h2 {
+    font-size: 2em;
+  }
+
+  .text-container p {
+    font-size: 0.7em;
+  }
+
+  .arrow-button {
+    font-size: 1.5em;
+    top: 5%;
+    z-index: 2;
+  }
+
+  .arrow-icon {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  .left-arrow {
+    left: 55%;
+  }
+
+  .right-arrow {
+    right: 0;
+  }
+
+  .arrow-button:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .left-arrow:hover {
+    animation: none;
+  }
+
+  .right-arrow:hover {
+    animation: none;
+  }
+
+  .project-display {
+    margin: 5vh 0;
+  }
+
+}
+
+@media only screen and (min-width: 460px) and (max-width: 600px) {
 
   .page-min-height {
     height: 75vh;

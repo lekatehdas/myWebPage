@@ -1,0 +1,21 @@
+@media only screen and (max-width: 460px) {
+
+  .footer-container {
+    height: 10vh;
+  }
+
+  .name {
+    font-size: 2em;
+    line-height: 1;
+  }
+
+  .icon {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  .copyright {
+  font-size: 0.8em;
+}
+
+}

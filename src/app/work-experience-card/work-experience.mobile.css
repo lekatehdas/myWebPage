@@ -1,4 +1,37 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 460px) {
+
+  .card {
+    padding: 1vh;
+  }
+
+  .card .card-content .card-icon {
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    box-shadow: 0 0 10px rgba(141, 141, 141, 0.2);
+  }
+
+  .card .card-text h3 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .card-text p {
+    font-size: 0.6em;
+    margin-bottom: 0;
+  }
+
+  .card .card-text span {
+    font-size: 0.7em;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 460px) and (max-width: 600px) {
 
   .card .card-content .card-icon {
     border-radius: 50%;

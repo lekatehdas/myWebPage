@@ -1,4 +1,53 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 460px) {
+
+  .resume-container {
+    padding: 0;
+  }
+
+  .adjustable-height {
+    height: 80vh;
+  }
+
+  .movable-text {
+    top: 3%;
+    left: 60%;
+  }
+
+  .movable-text h2 {
+    font-size: 2em;
+    text-shadow: none;
+  }
+
+    .movable-text p {
+    font-size: 0.7em;
+    text-shadow: none;
+  }
+
+  .work-experience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vh;
+    padding-left: 1vh;
+  }
+
+  .download-button {
+    right: 29%;
+    bottom: -0%;
+    width: 33vw;
+    height: 5vh;
+    line-height: 1vh;
+    text-decoration: none;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3vh;
+    margin-bottom: 0.2vh;
+  }
+
+}
+
+@media only screen and (min-width: 460px) and (max-width: 600px) {
   .resume-container {
     padding-top: 10vh;
   }
@@ -66,6 +115,5 @@
     filter: invert(61%) sepia(83%) saturate(544%) hue-rotate(351deg) brightness(102%) contrast(96%);
     transition: 1s;
   }
-
 
 }

@@ -6,15 +6,15 @@
   --contrast-color: #FAA613;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 460px) {
 
   .component-max-width {
-    max-width: 20em;
+    max-width: 80vw;
     margin: 0 auto;
   }
 
   .page-min-height {
-    height: 95vh;
+    min-height: 100vh;
   }
 
 }
