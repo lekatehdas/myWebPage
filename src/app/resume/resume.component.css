@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 75em;
 }
 
 .component-max-width {
@@ -70,7 +69,8 @@
   background: var(--contrast-color);
   color: var(--background-color);
 }
-.download-button:hover .download-icon{
+
+.download-button:hover .download-icon {
   filter: none;
 }
 
@@ -93,4 +93,21 @@
 .adjustable-text {
   position: relative;
   left: 7%;
+}
+
+@media only screen and (min-width: 1080px) {
+
+  .component-max-width {
+    width: 75vw;
+  }
+
+  .adjustable-height {
+    height: 55vh;
+    border-radius: 1vh;
+  }
+
+  .work-experience-list {
+    gap: 3vh;
+  }
+
 }

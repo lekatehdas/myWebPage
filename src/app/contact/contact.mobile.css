@@ -46,19 +46,18 @@
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 600px) {
+@media only screen and (min-width: 460px) and (max-width: 1080px) {
 
   .contact-container {
     padding-top: 10vh;
   }
 
   .adjustable-height {
-    background: var(--background-color);
-    height: 95vh;
+    height: 75vh;
   }
 
   .movable-text {
-    top: 7%;
+    top: 17%;
     position: absolute;
     z-index: 1;
   }
@@ -81,7 +80,7 @@
   }
 
   .form-button {
-    left: 18%;
+    left: 30%;
     background: var(--contrast-color);
     color: var(--background-color);
   }

@@ -51,10 +51,10 @@
   }
 }
 
-@media only screen and (min-width: 460px) and (max-width: 600px) {
+@media only screen and (min-width: 460px) and (max-width: 1080px){
 
   .about-container {
-    max-width: 80%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,14 +64,14 @@
   }
 
   .profile-picture-container {
-    width: 35vh;
-    height: 35vh;
+    width: 45vh;
+    height: 45vh;
     animation: fadeInFromLeft 2s;
   }
 
   .profile-picture {
     object-fit: contain;
-    border-radius: 1em;
+    border-radius: 1vh;
   }
 
   .about-text {
@@ -85,15 +85,15 @@
     position: relative;
     right: 10%;
     margin-right: 1em;
-    font-size: 1.5em;
+    font-size: 4vh;
   }
 
   .about-text h3 {
-    font-size: 1em;
+    font-size: 2vh;
   }
 
   .about-text p {
-    font-size: 0.7em;
+    font-size: 1.5vh;
     max-width: 23vh;
   }
 

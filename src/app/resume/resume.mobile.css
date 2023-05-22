@@ -48,13 +48,10 @@
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 600px) {
-  .resume-container {
-    padding-top: 10vh;
-  }
+@media only screen and (min-width: 460px) and (max-width: 1080px) {
 
   .adjustable-height {
-    height: 95vh;
+    height: 75vh;
   }
 
   .movable-text {
@@ -71,7 +68,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
-    padding-left: 1em;
+    padding-left: 7vw;
     margin: auto;
   }
 
@@ -79,12 +76,9 @@
     position: absolute;
     right: 34%;
     bottom: 2%;
-    width: 9em;
-    height: 2em;
+    width: 25vw;
+    height: 3vh;
     margin: 0;
-    background: var(--background-color);
-    text-align: center;
-    border-radius: 5px;
     color: var(--contrast-color);
     font-weight: 700;
     line-height: 25px;

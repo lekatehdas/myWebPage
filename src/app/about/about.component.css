@@ -50,13 +50,21 @@
 }
 
 @keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .fade-out {
@@ -65,4 +73,11 @@
 
 .fade-in {
   animation: fade-in 0.5s;
+}
+
+@media only screen and (min-width: 1080px) {
+  .profile-picture-container {
+    width: 40vh;
+    height: 40vh;
+  }
 }

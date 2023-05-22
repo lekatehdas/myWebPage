@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   background-color: var(--foreground-color);
   position: fixed;
   top: 0;
@@ -9,7 +9,7 @@
 }
 
 .name {
-  margin-left: 10px;
+  margin-left: 2vw;
   font-weight: bold;
   font-size: 1.2em;
   color: var(--text-color);

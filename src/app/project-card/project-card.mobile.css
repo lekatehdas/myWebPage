@@ -19,11 +19,11 @@
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 600px) {
+@media only screen and (min-width: 460px) and (max-width: 1080px){
 
   .project-card {
-    width: 25em;
-    height: 35em;
+    width: 75vw;
+    height: 70vh;
   }
 
   .project-details h3 {

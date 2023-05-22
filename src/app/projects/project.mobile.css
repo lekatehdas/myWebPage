@@ -61,41 +61,49 @@
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 600px) {
+@media only screen and (min-width: 460px) and (max-width: 1080px) {
 
   .page-min-height {
     height: 75vh;
   }
 
   .text-container {
-    top: 10%;
+    top: 13%;
     left: 45%;
     background: initial;
   }
 
   h2 {
-    font-size: 4em;
+    font-size: 4vh;
   }
 
   p {
-    font-size: 0.7em;
+    font-size: 1.5vh;
   }
 
   .arrow-icon {
-    height: 3em;
-    width: 3em;
-  }
-
-  .arrow-button {
-    top: 20%;
+    height: 7vh;
+    width: 7vh;
   }
 
   .left-arrow {
-    left: 5%;
+    left: 3%;
   }
 
   .right-arrow {
-    right: 56%;
+    right: 3%;
   }
 
+  .arrow-button:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .left-arrow:hover {
+    animation: none;
+  }
+
+  .right-arrow:hover {
+    animation: none;
+  }
 }

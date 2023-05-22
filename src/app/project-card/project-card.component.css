@@ -36,3 +36,12 @@
 .project-details p {
   margin-bottom: 20px;
 }
+
+@media only screen and (min-width: 1080px) {
+
+  .project-card {
+  width: 75vw;
+  height: 60vh;
+}
+
+}

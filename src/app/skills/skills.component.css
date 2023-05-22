@@ -136,3 +136,15 @@
   font-weight: bold;
   text-shadow: 0 0 2px white;
 }
+
+@media only screen and (min-width: 1080px) {
+
+  .component-max-width {
+    width: 75vw;
+  }
+
+  .adjustable-height {
+    height: 50vh;
+  }
+
+}

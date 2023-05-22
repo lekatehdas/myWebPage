@@ -2,14 +2,14 @@
   --text-color: #e4e4e2;
   --foreground-color: #332323FF;
   --background-color: #1e1414;
-  --top-card-color: #332323;
+  --top-card-color: #644848FF;
   --contrast-color: #FAA613;
 }
 
 @media only screen and (max-width: 460px) {
 
   .component-max-width {
-    max-width: 80vw;
+    max-width: 85vw;
     margin: 0 auto;
   }
 
@@ -19,16 +19,32 @@
 
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 460px) and (max-width: 1080px) {
+
   .component-max-width {
-    max-width: 80em;
+    max-width: 95vw;
     margin: 0 auto;
   }
 
   .page-min-height {
-    min-height: 90vh;
+    min-height: 95vh;
   }
+
 }
+
+@media only screen and (min-width: 1080px) {
+
+  .page-min-height {
+    min-height: 75vh;
+    margin: 0 auto;
+  }
+
+  .component-max-width {
+    max-width: 95vw;
+  }
+
+}
+
 
 html,
 body {

@@ -103,11 +103,34 @@ p {
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+
+  .projects-container {
+    padding-bottom: 5vh;
+  }
+
+  .left-arrow {
+    left: 5%;
+  }
+
+  .right-arrow {
+    right: 5%;
+  }
 }

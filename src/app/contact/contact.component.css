@@ -123,3 +123,24 @@
 .alert.active {
   display: block;
 }
+
+
+@media only screen and (min-width: 1080px) {
+
+  .page-min-height {
+    min-height: 90vh;
+  }
+
+  .contact-container {
+    width: 75vw;
+  }
+
+  .component-max-width {
+    width: 75vw;
+  }
+
+  .adjustable-height {
+    height: 50vh;
+  }
+
+}
