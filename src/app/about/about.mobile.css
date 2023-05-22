@@ -39,11 +39,13 @@
 
   .about-text h3 {
     margin-left: 0;
+    text-shadow: none;
     font-size: 1.2em;
   }
 
   .about-text p {
     font-size: 0.9em;
+    text-shadow: none;
     max-width: 80%;
     margin: 0;
   }
