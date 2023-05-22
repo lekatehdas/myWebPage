@@ -20,13 +20,16 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(form: NgForm): void {
+    form.controls['name'].markAsTouched(); // Mark 'name' as touched
+    form.controls['contactInfo'].markAsTouched(); // Mark 'contactInfo' as touched
+    form.controls['message'].markAsTouched(); // Mark 'message' as touched
+
     if (form.valid) {
       const payload = {
         content: `Name: ${this.name}\nContact Info: ${this.contactInfo}\nMessage: ${this.message}`
       };
       this.http.post(environment.discordWebhook, payload).subscribe(
         response => {
-          // Reset form after successful post
           form.reset();
         },
         error => {

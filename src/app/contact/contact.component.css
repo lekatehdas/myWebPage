@@ -108,7 +108,18 @@
   filter: none;
 }
 
+.alert-placeholder {
+  color: transparent;
+  height: 1vh;
+  margin-top: 0;
+}
+
 .alert {
   color: red;
-  margin-top: 5px;
+  margin-top: 0;
+  display: none;
+}
+
+.alert.active {
+  display: block;
 }

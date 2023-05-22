@@ -12,29 +12,35 @@
     <form #contactForm="ngForm" class="contact-form" (ngSubmit)="onSubmit(contactForm)">
       <label for="name" class="form-label">Name</label>
       <input type="text" id="name" required [(ngModel)]="name" name="name" class="form-input" #nameField="ngModel">
-      <div *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)" class="alert">
-        <div *ngIf="nameField.errors?.['required']">
-          Name is required.
-        </div>
-      </div>
+<div class="alert-placeholder">
+  <div *ngIf="nameField.invalid && nameField.touched" class="alert active">
+    <div *ngIf="nameField.errors?.['required']">
+      Name is required.
+    </div>
+  </div>
+</div>
 
       <label for="contactInfo" class="form-label">Email Address</label>
       <input type="text" id="contactInfo" required [(ngModel)]="contactInfo" name="contactInfo" class="form-input"
              #emailField="ngModel">
-      <div *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)" class="alert">
-        <div *ngIf="emailField.errors?.['required']">
-          Email is required.
-        </div>
-      </div>
+<div class="alert-placeholder">
+  <div *ngIf="emailField.invalid && emailField.touched" class="alert active">
+    <div *ngIf="emailField.errors?.['required']">
+      Email is required.
+    </div>
+  </div>
+</div>
 
       <label for="message" class="form-label">Message</label>
       <textarea id="message" required [(ngModel)]="message" name="message" class="form-input form-textarea"
                 #messageField="ngModel"></textarea>
-      <div *ngIf="messageField.invalid && (messageField.dirty || messageField.touched)" class="alert">
-        <div *ngIf="messageField.errors?.['required']">
-          Message is required.
-        </div>
-      </div>
+<div class="alert-placeholder">
+  <div *ngIf="messageField.invalid && messageField.touched" class="alert active">
+    <div *ngIf="messageField.errors?.['required']">
+      Message is required.
+    </div>
+  </div>
+</div>
 
       <button type="submit" class="form-button">
         <span>Message Me</span>
