@@ -9,7 +9,7 @@
     <img src="assets/icons/left.png" alt="Previous" class="arrow-icon">
   </button>
 
-  <div class="project-display">
+  <div class="project-display" (swipeleft)="nextProject()" (swiperight)="previousProject()">
     <ng-container *ngFor="let project of projects; index as i">
 
       <app-project-card

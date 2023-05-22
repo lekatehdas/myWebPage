@@ -37,6 +37,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   previousProject(): void {
+    console.log("Previous project triggered");
     this.animationClass = 'fade-out';
     setTimeout(() => {
       this.currentProject = (this.currentProject - 1 + this.projects.length) % this.projects.length;
@@ -46,6 +47,8 @@ export class ProjectsComponent implements OnInit {
   }
 
   nextProject(): void {
+    console.log("Next project triggered");
+
     this.animationClass = 'fade-out';
     setTimeout(() => {
       this.currentProject = (this.currentProject + 1) % this.projects.length;
