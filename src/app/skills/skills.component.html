@@ -15,7 +15,8 @@
         <p class="vertical-text">{{ skills[currentSkill].title }}</p>
       </div>
 
-      <div class="middle-div">
+      <div class="middle-div" [@changeSkillState]="currentSkillState" (@changeSkillState.done)="animationDone($event)">
+
         <ng-container *ngFor="let skill of skills[currentSkill].items; let i = index;">
           <app-skill-card
             [ngClass]="{'top-row': i<4, 'bottom-row': i>=4}"

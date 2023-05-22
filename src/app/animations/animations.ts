@@ -20,20 +20,3 @@ export const fadeInFromRightDelayed = trigger('fadeInFromRightDelayed', [
     animate('1500ms 400ms ease-out', style({opacity: 1, transform: 'translateX(0)'}))
   ])
 ]);
-
-export const fadeInAnimation = trigger('fadeIn', [
-  transition('* => *', [
-    query('[animate-me]', [
-      style({ opacity: 0 }),
-      stagger(500, [animate('2000ms', style({ opacity: 1 }))]),
-    ], { optional: true }),
-  ]),
-]);
-
-export const blurInAnimation = trigger('blurIn', [
-  state('blur', style({ filter: 'blur(2px)' })),
-  state('focus', style({ filter: 'blur(0)' })),
-  transition('blur => focus', animate('1000ms ease-out')),
-  transition('focus => blur', animate('1000ms ease-in')),
-]);
-

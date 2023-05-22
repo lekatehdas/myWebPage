@@ -1,13 +1,24 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import {animate, state, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css', './skills.mobile.css']
+  styleUrls: ['./skills.component.css', './skills.mobile.css'],
+  animations: [
+    trigger('changeSkillState', [
+      state('active', style({opacity: 1})),
+      state('inactive', style({opacity: 0})),
+      transition('active => inactive, inactive => active', [
+        animate('0.2s')
+      ]),
+    ])
+  ],
 })
 export class SkillsComponent implements AfterViewInit {
   @ViewChild('scrollableElement') scrollableElement!: ElementRef;
-  isBlurred = false;
+  currentSkillState = 'active';
+  nextSkill = 1;
   currentSkill = 0;
   skillsPre = 'Here are skills that I have become familiar with throughout my work life and education'
   skills = [
@@ -71,15 +82,27 @@ export class SkillsComponent implements AfterViewInit {
     this.scrollableElement.nativeElement.addEventListener('wheel', (event: WheelEvent) => {
       event.preventDefault();
 
+      this.currentSkillState = 'inactive';
+
       if (event.deltaY > 0) {
-        this.currentSkill = this.currentSkill < this.skills.length - 1 ? this.currentSkill + 1 : 0;
+        this.nextSkill = this.currentSkill < this.skills.length - 1 ? this.currentSkill + 1 : 0;
       } else {
-        this.currentSkill = this.currentSkill > 0 ? this.currentSkill - 1 : this.skills.length - 1;
+        this.nextSkill = this.currentSkill > 0 ? this.currentSkill - 1 : this.skills.length - 1;
       }
     })
   }
 
   setCurrentSkill(index: number) {
-    this.currentSkill = index;
+    if (index !== this.currentSkill) {
+      this.currentSkillState = 'inactive';
+      this.nextSkill = index;
+    }
+  }
+
+  animationDone(event: { toState: string; }) {
+    if (event.toState === 'inactive') {
+      this.currentSkill = this.nextSkill;
+      this.currentSkillState = 'active';
+    }
   }
 }
