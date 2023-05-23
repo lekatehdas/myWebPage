@@ -1,15 +1,15 @@
 <div class="projects-container component-max-width page-min-height">
 
-  <div class="text-container">
-    <h2>Projects</h2>
-    <p>Take a look at some of my work, click to get to the GitHub</p>
-  </div>
-
-  <button class="arrow-button left-arrow" (click)="previousProject()">
-    <img src="assets/icons/left.png" alt="Previous" class="arrow-icon">
-  </button>
 
   <div class="project-display" (swipeleft)="nextProject()" (swiperight)="previousProject()">
+    <div class="text-container">
+      <h2>Projects</h2>
+      <p>Take a look at some of my work, click to get to the GitHub</p>
+    </div>
+
+    <button class="arrow-button left-arrow" (click)="previousProject()">
+      <img src="assets/icons/left.png" alt="Previous" class="arrow-icon">
+    </button>
     <ng-container *ngFor="let project of projects; index as i">
 
       <app-project-card
@@ -23,9 +23,9 @@
 
 
     </ng-container>
+    <button class="arrow-button right-arrow" (click)="nextProject()">
+      <img src="assets/icons/right.png" alt="Next" class="arrow-icon">
+    </button>
   </div>
 
-  <button class="arrow-button right-arrow" (click)="nextProject()">
-    <img src="assets/icons/right.png" alt="Next" class="arrow-icon">
-  </button>
 </div>

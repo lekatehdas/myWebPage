@@ -4,7 +4,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css', './skills.mobile.css'],
+  styleUrls: ['./skills.component.css', './skills.mobile.css', './skills.tablet.css'],
   animations: [
     trigger('changeSkillState', [
       state('active', style({opacity: 1})),

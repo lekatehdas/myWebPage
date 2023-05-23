@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-skill-card',
   templateUrl: './skill-card.component.html',
-  styleUrls: ['./skill-card.component.css', './skill-card.mobile.css']
+  styleUrls: ['./skill-card.component.css', './skill-card.mobile.css', './skill-card.tablet.css']
 })
 export class SkillCardComponent implements OnInit {
   @Input() name: string | undefined;

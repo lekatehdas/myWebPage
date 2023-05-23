@@ -1,0 +1,9 @@
+@media only screen and (max-width: 1080px) and (orientation: landscape) {
+
+  .skill-card {
+    height: 13vw;
+    width: 13vw;
+  }
+
+
+}

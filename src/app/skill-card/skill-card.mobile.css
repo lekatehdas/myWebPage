@@ -33,13 +33,3 @@
   }
 
 }
-
-@media only screen and (orientation: landscape) {
-
-  .skill-card {
-    height: 13vw;
-    width: 13vw;
-  }
-
-
-}

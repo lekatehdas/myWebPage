@@ -2,9 +2,9 @@
   background-color: var(--top-card-color);
   display: flex;
   flex-direction: column;
-  height: 15em;
-  width: 15em;
-  border-radius: 1em;
+  height: 14vw;
+  width: 14vw;
+  border-radius: 1vw;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin: 1em;
+  margin: 1vw;
 }
 
 .skill-icon {

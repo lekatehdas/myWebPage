@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 75em;
+  width: 75vw;
 }
 
 .component-max-width {
@@ -11,63 +11,72 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 75em;
+  width: 75vw;
   height: 100%;
 }
 
 
 .adjustable-height {
-  height: 50em;
+  height: 45vw;
   background: var(--foreground-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 1em;
+  border-radius: 1vw;
   position: relative;
 }
 
 .movable-text {
-  position: absolute;
+  top: -3%;
+  position: relative;
   z-index: 1;
-  top: 13%;
 }
 
 .movable-text h2 {
-  font-size: 5em;
-  margin-bottom: 0.5em;
+  font-size: 4vw;
+  margin-bottom: 1vw;
   font-weight: bold;
   text-shadow: 0 0 2px white;
 }
 
+.movable-text p {
+  font-size: 1vw;
+}
+
 .contact-form {
+  position: relative;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 50vw;
+  height: 100%;
   margin: 0 auto;
 }
 
 .form-label {
+  font-size: 1vw;
   color: var(--contrast-color);
   font-weight: 500;
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 1vw;
+  margin-bottom: 0.5vw;
 }
 
 .form-input {
-  padding: 0.5em;
+  font-size: 1vw;
+  padding: 0.5vw;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.5vw;
   background-color: var(--text-color);
   color: var(--background-color);
 }
 
 
 .form-textarea {
-  height: 15em;
+  height: 15vw;
   resize: none;
 }
 
 .form-button {
-  padding: 1em 2em;
+  font-size: 1vw;
+  padding: 0.5vw 1vw;
   background: var(--background-color);
   color: var(--contrast-color);
   border: none;
@@ -80,11 +89,12 @@
   justify-content: space-between;
   align-items: center;
 
-  width: 15em;
-  height: 5em;
-  margin-top: 2em;
+  width: 15vw;
+  height: 4vw;
+  margin: 1vw 0;
   position: relative;
   left: 25%;
+  bottom: 2%;
 }
 
 .form-button span {
@@ -97,7 +107,7 @@
 }
 
 .send-icon {
-  height: calc(100% - 1em);
+  height: calc(100% - 1vw);
   width: auto;
   order: 2;
   filter: invert(61%) sepia(83%) saturate(544%) hue-rotate(351deg) brightness(102%) contrast(96%);
@@ -110,7 +120,7 @@
 
 .alert-placeholder {
   color: transparent;
-  height: 1vh;
+  height: 1vw;
   margin-top: 0;
 }
 
@@ -122,25 +132,4 @@
 
 .alert.active {
   display: block;
-}
-
-
-@media only screen and (min-width: 1080px) {
-
-  .page-min-height {
-    min-height: 90vh;
-  }
-
-  .contact-container {
-    width: 75vw;
-  }
-
-  .component-max-width {
-    width: 75vw;
-  }
-
-  .adjustable-height {
-    height: 50vh;
-  }
-
 }

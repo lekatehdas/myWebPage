@@ -1,52 +1,54 @@
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 2vw;
   align-items: center;
   justify-content: center;
 }
 
 .profile-picture-container {
-  width: 40em;
-  height: 40em;
+  width: 40vw;
+  height: 40vw;
   overflow: hidden;
-  border-radius: 1.25em;
-  margin-right: 2em;
+  border-radius: 1.25vw;
 }
 
 
 .profile-picture {
   width: 100%;
   height: auto;
-  border-radius: 1.25em;
+  border-radius: 1.25vw;
   object-fit: cover;
   object-position: center;
 }
 
 .about-text {
-  max-width: 40em;
-  margin-left: -10em;
-  margin-top: -12em;
+  position: relative;
+  max-width: 40vw;
+  margin-left: -10vw;
+  margin-top: -12vw;
   text-shadow: 0 0 2px white;
   line-height: 1.2;
 }
 
 .about-text h2 {
-  font-size: 5em;
-  margin-bottom: 0.5em;
+  font-size: 5vw;
+  margin-bottom: 0.5vw;
   font-weight: bold;
 }
 
 .about-text h3 {
-  font-size: 3em;
+  font-size: 3vw;
   line-height: 1;
-  margin-top: 1em;
+  margin-top: 1vw;
+  margin-left: 3vw;
   font-weight: normal;
 }
 
 .about-text p {
-  margin-top: 1em;
-  margin-left: 8em;
+  font-size: 1vw;
+  margin-top: 1vw;
+  margin-left: 8vw;
 }
 
 @keyframes fade-out {
@@ -73,11 +75,4 @@
 
 .fade-in {
   animation: fade-in 0.5s;
-}
-
-@media only screen and (min-width: 1080px) {
-  .profile-picture-container {
-    width: 40vh;
-    height: 40vh;
-  }
 }
