@@ -91,7 +91,7 @@
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 1080px){
+@media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait) {
 
   .adjustable-height {
     height: 70vh;
@@ -139,6 +139,33 @@
   }
 
   .right-div {
+    flex-basis: 7vw;
+  }
+
+}
+
+@media only screen and (orientation: landscape) {
+
+  .adjustable-height {
+    height: 70vh;
+  }
+
+  .component-max-width {
+    width: 80vw;
+  }
+
+  .movable-title {
+    position: absolute;
+    top: 11%;
+    left: 3%;
+  }
+
+  .centered-text {
+    top: 20%;
+    left: 26%;
+  }
+
+  .left-div {
     flex-basis: 7vw;
   }
 
