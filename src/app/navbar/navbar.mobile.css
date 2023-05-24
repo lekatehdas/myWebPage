@@ -1,7 +1,7 @@
 @media only screen and (max-width: 460px) {
 
   .navbar a {
-    font-size: 0.6em;
+    font-size: 2vh;
     justify-content: flex-start;
   }
 
@@ -15,4 +15,10 @@
     display: none;
   }
 
+}
+
+@media only screen and (min-width: 460px) and (max-width: 1080px) {
+  .navbar a {
+    font-size: 2vw;
+  }
 }

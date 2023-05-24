@@ -16,6 +16,7 @@
   top: 15%;
   position: absolute;
   text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   z-index: 2;
   background: linear-gradient(90deg, rgba(51, 51, 51, 0.1), rgba(98, 84, 61, 0.1), rgba(51, 51, 51, 0.1));
   border-radius: 1em;

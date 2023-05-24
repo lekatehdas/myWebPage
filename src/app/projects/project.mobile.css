@@ -61,37 +61,48 @@
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 1080px) {
+@media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait) {
 
-  .page-min-height {
-    height: 75vh;
+  .component-max-width {
+    width: 100%;
+  }
+
+  .projects-container {
+    padding-bottom: 5vh;
   }
 
   .text-container {
-    top: 13%;
-    left: 45%;
-    background: initial;
+    max-width: 20vh;
+    position: absolute;
+    top: 5%;
+    left: 5%;
   }
 
-  h2 {
+  .text-container h2 {
     font-size: 4vh;
   }
 
-  p {
-    font-size: 1.5vh;
+  .text-container p {
+    font-size: 1.2vh;
+  }
+
+  .arrow-button {
+    font-size: 1.5em;
+    top: 45%;
+    z-index: 2;
   }
 
   .arrow-icon {
-    height: 7vh;
-    width: 7vh;
+    width: 6vh;
+    height: 6vh;
   }
 
   .left-arrow {
-    left: 3%;
+    left: 5%;
   }
 
   .right-arrow {
-    right: 3%;
+    right: 5%;
   }
 
   .arrow-button:hover {
@@ -105,5 +116,9 @@
 
   .right-arrow:hover {
     animation: none;
+  }
+
+  .project-display {
+    margin: 5vh 0;
   }
 }

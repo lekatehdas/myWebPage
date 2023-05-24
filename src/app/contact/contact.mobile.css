@@ -7,16 +7,16 @@
   }
 
   .movable-text {
-    position: absolute;
-    top: -1%;
+    position: relative;
+    top: 5%;
   }
 
   .movable-text h2 {
-    font-size: 2em;
+    font-size: 4vh;
   }
 
   .movable-text p {
-    font-size: 0.7em;
+    font-size: 1.2vh;
   }
 
   .contact-form {
@@ -25,7 +25,11 @@
   }
 
   .form-label {
-    font-size: 0.8em;
+    font-size: 1.2vh;
+  }
+
+  .form-input {
+    font-size: 1vh;
   }
 
   .form-textarea {
@@ -35,57 +39,91 @@
 
   .form-button {
     background: var(--foreground-color);
+    padding: 1vh 2vh;
+    font-size: 2vh;
     left: 15%;
     width: 25vh;
+    height: 4vh;
+  }
+
+  .send-icon {
+    height: calc(100%);
   }
 
   .alert {
     margin: 0;
-    font-size: 0.7em;
+    font-size: 1.2vh;
+  }
+
+  .alert-placeholder {
+    height: 1.2vh;
   }
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 1080px) {
-
-  .contact-container {
-    padding-top: 10vh;
-  }
+@media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait) {
 
   .adjustable-height {
-    height: 75vh;
+    height: 60vh;
   }
 
   .movable-text {
-    top: 17%;
-    position: absolute;
+    top: 0%;
+    position: relative;
     z-index: 1;
   }
 
   .movable-text h2 {
-    font-size: 4em;
-    margin-bottom: 0.5em;
+    font-size: 4vh;
+    margin-bottom: 2vh;
     font-weight: bold;
     text-shadow: 0 0 2px white;
   }
 
   .movable-text p {
-    text-align: center;
-    max-width: 20vh;
-    margin-bottom: 1vh;
+    font-size: 1.2vh;
+    text-align: left;
+    max-width: 25vh;
+    margin-bottom: 2vh;
   }
 
   .contact-form {
     width: 75%;
+    height: 75%;
+  }
+
+  .form-label {
+    font-size: 1.5vh;
+  }
+
+  .form-input {
+    font-size: 1.5vh;
+  }
+
+  .form-textarea {
+    height: 33vh;
+    resize: none;
   }
 
   .form-button {
+    font-size: 1.5vh;
+    padding: 1vh 2vh;
+    width: 25vw;
+    height: 5vh;
     left: 30%;
     background: var(--contrast-color);
     color: var(--background-color);
   }
 
   .send-icon {
+  height: calc(100%);
+}
+
+  .send-icon {
     filter: initial;
+  }
+
+  .alert-placeholder {
+    height: 2vh;
   }
 }

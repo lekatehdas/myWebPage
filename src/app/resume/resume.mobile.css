@@ -5,11 +5,12 @@
   }
 
   .adjustable-height {
-    height: 80vh;
+    height: 70vh;
   }
 
   .movable-text {
-    top: 3%;
+    max-width: 30vw;
+    top: -13%;
     left: 60%;
   }
 
@@ -24,6 +25,7 @@
   }
 
   .work-experience-list {
+    position: absolute;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1vh;
@@ -31,8 +33,10 @@
   }
 
   .download-button {
-    right: 29%;
-    bottom: -0%;
+    background: var(--foreground-color);
+    position: relative;
+    left: -17vw;
+    top: 60vh;
     width: 33vw;
     height: 5vh;
     line-height: 1vh;
@@ -41,40 +45,49 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.3vh;
+    padding: 1vh;
     margin-bottom: 0.2vh;
-    font-size: 0.7em;
+    font-size: 1.2vh;
   }
 
+  .download-icon {
+    height: calc(100% - 1vh);
+  }
 }
 
-@media only screen and (min-width: 460px) and (max-width: 1080px) {
+@media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait){
 
   .adjustable-height {
-    height: 75vh;
+    height: 65vh;
   }
 
   .movable-text {
-    top: 8%;
+    top: -4%;
     left: 1%;
   }
 
   .movable-text h2 {
-    font-size: 4em;
+    font-size: 4vh;
     text-shadow: none;
   }
 
+  .movable-text p {
+    font-size: 1.2vh;
+  }
+
   .work-experience-list {
+    position: relative;
+    top: -11%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
-    padding-left: 7vw;
+    gap: 1vh;
+    padding-left: 4vw;
     margin: auto;
   }
 
   .download-button {
     position: absolute;
-    right: 34%;
+    left: 55%;
     bottom: 2%;
     width: 25vw;
     height: 3vh;

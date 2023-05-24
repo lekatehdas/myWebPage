@@ -8,30 +8,24 @@
     width: 100%;
   }
 
-  .movable-title {
-    position: absolute;
-    top: 7%;
-    left: 65%
-  }
-
-  .movable-title h2 {
-    font-size: 2em;
-  }
-
-  .centered-text {
-    top: 17%;
-    left: 65%;
-    height: auto;
-    font-size: 0.7em;
-    width: 27vh;
-    margin: 0;
-    text-align: left;
-    justify-content: left;
-    align-items: flex-start;
-  }
-
   .top-div {
     flex-basis: 10%;
+  }
+
+  .top-div h2 {
+    font-size: 4vh;
+    margin-bottom: 0.5vh;
+    text-shadow: none;
+    right: 42%;
+    top: -9%;
+  }
+
+  .top-div p {
+    font-size: 1.2vh;
+    max-width: 20vh;
+    margin-bottom: 0.5vh;
+    text-shadow: none;
+    top: -9%;
   }
 
   .bottom-div {
@@ -88,7 +82,6 @@
     margin-bottom: 3em;
   }
 
-
 }
 
 @media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait) {
@@ -101,15 +94,28 @@
     width: 80vw;
   }
 
-  .movable-title {
-    position: absolute;
-    top: 11%;
-    left: 3%;
+  .top-div {
+    flex-basis: 10%;
   }
 
-  .centered-text {
-    top: 20%;
-    left: 26%;
+  .top-div h2 {
+    font-size: 4vh;
+    margin-bottom: 0.5vh;
+    text-shadow: none;
+    right: 42%;
+    top: -9%;
+  }
+
+  .top-div p {
+    font-size: 1.2vh;
+    max-width: 20vh;
+    margin-bottom: 0.5vh;
+    text-shadow: none;
+    top: -9%;
+  }
+
+  .vertical-text {
+    font-size: 1.5vh;
   }
 
   .left-div {
