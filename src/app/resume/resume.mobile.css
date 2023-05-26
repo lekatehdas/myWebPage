@@ -1,34 +1,27 @@
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 460px) and (orientation: portrait){
 
   .resume-container {
     padding: 0;
   }
 
   .adjustable-height {
-    height: 75vh;
+    min-height: 75vh;
     justify-content: initial;
     align-content: center;
   }
 
-  .movable-text {
-    max-width: 30vw;
-    top: -13%;
-    left: 60%;
-  }
-
-  .movable-text h2 {
-    font-size: 2em;
+  .top h2 {
+    font-size: 4vh;
     text-shadow: none;
   }
 
-  .movable-text p {
-    font-size: 0.7em;
+  .top p {
+    font-size: 1.2vh;
     text-shadow: none;
+    max-width: 20vw;
   }
 
-  .work-experience-list {
-    position: absolute;
-    display: grid;
+  .middle {
     grid-template-columns: repeat(2, 1fr);
     gap: 1vh;
     padding-left: 1vh;
@@ -36,11 +29,11 @@
   }
 
   .download-button {
-    background: var(--foreground-color);
+    background: var(--background-color);
     border-radius: 1vh;
     position: relative;
     left: -17vw;
-    top: 70vh;
+    bottom: 1vh;
     width: 33vw;
     height: 5vh;
     line-height: 1vh;
