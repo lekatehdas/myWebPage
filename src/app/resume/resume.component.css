@@ -13,7 +13,11 @@
 }
 
 .adjustable-height {
-  height: 40vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  min-height: 40vw;
   background: var(--foreground-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -21,31 +25,56 @@
   position: relative;
 }
 
-.movable-text {
-  height: 1px;
+.top, .middle, .bottom {
   position: relative;
-  z-index: 1;
-  top: -3%;
-  left: -3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.movable-text h2 {
+.top {
+  flex-basis: 5%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  z-index: 1;
+}
+
+.top h2 {
+  position: relative;
+  right: 35%;
   font-size: 4vw;
   margin-bottom: 1vw;
   font-weight: bold;
   text-shadow: 0 0 2px white;
 }
 
-.movable-text p {
+.top p {
   position: relative;
-  left: 3%;
+  right: 33%;
   font-size: 1vw;
+}
+
+.middle {
+  flex-basis: 90%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; /* Adjusted to auto to fit the content */
+  gap: 1vw; /* Optional, adds a gap between grid elements */
+  margin: 1vw;
+}
+
+.bottom {
+  flex-basis: 5%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .download-button {
   font-size: 1.5vw;
-  position: absolute;
-  left: 80%;
+  position: relative;
+  left: 33%;
   bottom: -1%;
   width: 12vw;
   height: 3vw;
@@ -83,18 +112,4 @@
   order: 2;
   filter: invert(61%) sepia(83%) saturate(544%) hue-rotate(351deg) brightness(102%) contrast(96%);
   transition: 1s;
-}
-
-.work-experience-list {
-  padding-top: 2vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1vw;
-  margin: 1vw;
-}
-
-
-.adjustable-text {
-  position: relative;
-  left: 7%;
 }

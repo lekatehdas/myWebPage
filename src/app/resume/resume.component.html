@@ -1,13 +1,12 @@
 <div class="page-min-height resume-container component-max-width">
 
-
   <div class="component-max-width adjustable-height">
-    <div class="movable-text">
+    <div class="top">
       <h2>Resume</h2>
       <p>Here are some of the things I've done so far..</p>
     </div>
 
-    <div class="work-experience-list">
+    <div class="middle">
       <app-work-experience-card
         *ngFor="let job of workExperience"
         [jobTitle]="job.title"
@@ -17,11 +16,12 @@
       </app-work-experience-card>
     </div>
 
+    <div class="bottom">
     <a href="assets/Aki_Sirkia_CV.pdf" download class="download-button">
       <img src="assets/icons/download.png" class="download-icon" alt="Download Icon">
       <span>Download CV</span>
     </a>
-
+    </div>
 
   </div>
 

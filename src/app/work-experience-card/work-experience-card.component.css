@@ -6,8 +6,8 @@
   padding: 1vw;
   margin-bottom: 1vw;
   box-sizing: border-box;
+  flex-grow: 1;
 }
-
 .card-content {
   display: flex;
   flex-direction: column;

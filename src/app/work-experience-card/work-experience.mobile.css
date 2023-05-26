@@ -2,6 +2,7 @@
 
   .card {
     padding: 1vh;
+    flex-grow: initial;
   }
 
   .card .card-content .card-icon {

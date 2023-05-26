@@ -5,7 +5,9 @@
   }
 
   .adjustable-height {
-    height: 70vh;
+    height: 75vh;
+    justify-content: initial;
+    align-content: center;
   }
 
   .movable-text {
@@ -19,7 +21,7 @@
     text-shadow: none;
   }
 
-    .movable-text p {
+  .movable-text p {
     font-size: 0.7em;
     text-shadow: none;
   }
@@ -30,13 +32,15 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1vh;
     padding-left: 1vh;
+    padding-bottom: 1vh;
   }
 
   .download-button {
     background: var(--foreground-color);
+    border-radius: 1vh;
     position: relative;
     left: -17vw;
-    top: 60vh;
+    top: 70vh;
     width: 33vw;
     height: 5vh;
     line-height: 1vh;
@@ -55,7 +59,7 @@
   }
 }
 
-@media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait){
+@media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait) {
 
   .adjustable-height {
     height: 65vh;
