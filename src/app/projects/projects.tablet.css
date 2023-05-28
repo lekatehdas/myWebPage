@@ -1,7 +1,7 @@
-@media only screen and (min-width: 420px) and (orientation: portrait) {
+@media only screen and (min-width: 460px) and (orientation: portrait) {
 
   .page-min-height {
-    min-height: 65vh;
+    min-height: 75vh;
   }
 
   .text-container h2 {

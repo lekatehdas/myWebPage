@@ -3,7 +3,7 @@ import {Component, HostListener, OnInit} from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css', './navbar.mobile.css']
+  styleUrls: ['./navbar.component.css', './navbar.mobile.css', './navbar.tablet.css']
 })
 export class NavbarComponent implements OnInit {
   activeLink: string | null = 'about';

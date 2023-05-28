@@ -1,8 +1,11 @@
 @media only screen and (min-width: 460px) and (orientation: portrait) {
 
-  .skill-card {
-    height: 17vh;
-    width: 17vh;
+  .name {
+    font-size: 3vh;
+  }
+
+  .navbar a {
+    font-size: 1.5vh;
   }
 
 }

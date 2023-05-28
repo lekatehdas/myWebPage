@@ -1,4 +1,4 @@
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 460px) and (orientation: portrait) {
 
   .navbar a {
     font-size: 2vh;
@@ -17,8 +17,10 @@
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 1080px) {
+@media only screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape) {
+
   .navbar a {
     font-size: 2vw;
   }
+
 }

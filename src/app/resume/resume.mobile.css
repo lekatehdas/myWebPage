@@ -32,7 +32,7 @@
     background: var(--background-color);
     border-radius: 1vh;
     position: relative;
-    left: -17vw;
+    left: 17vw;
     bottom: 1vh;
     width: 33vw;
     height: 5vh;
