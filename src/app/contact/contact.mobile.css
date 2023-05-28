@@ -1,4 +1,4 @@
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 460px) and (orientation: portrait) {
 
   .adjustable-height {
     background: var(--background-color);
@@ -61,69 +61,48 @@
 
 }
 
-@media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape) {
 
-  .adjustable-height {
-    height: 60vh;
+  .contact-container {
+    padding-top: 10vw!important;
+    padding-bottom: 15vw!important;
   }
 
-  .movable-text {
-    top: 0%;
-    position: relative;
-    z-index: 1;
+  .adjustable-height {
+    height: 61vw;
   }
 
   .movable-text h2 {
-    font-size: 4vh;
-    margin-bottom: 2vh;
+    font-size: 4vw;
+    margin-bottom: 2vw;
     font-weight: bold;
-    text-shadow: 0 0 2px white;
+    text-shadow: none;
   }
 
   .movable-text p {
-    font-size: 1.2vh;
+    font-size: 1.8vw;
     text-align: left;
-    max-width: 25vh;
-    margin-bottom: 2vh;
-  }
-
-  .contact-form {
-    width: 75%;
-    height: 75%;
+    max-width: 45vw;
+    margin-bottom: 2vw;
   }
 
   .form-label {
-    font-size: 1.5vh;
+    font-size: 1.5vw;
   }
 
   .form-input {
-    font-size: 1.5vh;
-  }
-
-  .form-textarea {
-    height: 33vh;
-    resize: none;
+    font-size: 1.5vw;
   }
 
   .form-button {
-    font-size: 1.5vh;
-    padding: 1vh 2vh;
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
     width: 25vw;
-    height: 5vh;
+    height: 5vw;
     left: 30%;
-    background: var(--contrast-color);
-    color: var(--background-color);
   }
 
-  .send-icon {
-  height: calc(100%);
-}
-
-  .send-icon {
-    filter: initial;
-  }
-
-  .alert-placeholder {
-    height: 2vh;
+  .alert {
+    font-size: 1.8vw;
   }
 }

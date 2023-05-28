@@ -1,0 +1,30 @@
+@media only screen and (min-width: 420px) and (orientation: portrait) {
+
+  .page-min-height {
+    min-height: 75vh;
+  }
+
+  .adjustable-height {
+    height: 65vh;
+  }
+
+  .top h2 {
+    font-size: 4vh;
+    text-shadow: none;
+  }
+
+  .top p {
+    font-size: 1.1vh;
+  }
+
+  .middle {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 2vw;
+  }
+
+  .download-button {
+    width: 20vw;
+    font-size: 1.5vh;
+    height: 3vh;
+  }
+}

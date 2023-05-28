@@ -5,7 +5,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 @Component({
   selector: 'app-project-card',
   templateUrl: './project-card.component.html',
-  styleUrls: ['./project-card.component.css', './project-card.mobile.css'],
+  styleUrls: ['./project-card.component.css', './project-card.mobile.css', './project-card.tablet.css'],
   animations: [
     trigger('zoom', [
       state('in', style({ transform: 'scale(1)' })),

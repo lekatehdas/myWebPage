@@ -1,0 +1,24 @@
+@media only screen and (min-width: 420px) and (orientation: portrait) {
+
+  .card {
+    min-width: 18vh;
+    min-height: 10vh;
+  }
+
+  .card .card-text h3 {
+    font-size: 1.5vh;
+    text-shadow: none;
+    font-weight: 500;
+  }
+
+  .card-text p {
+    font-size: 1vh;
+    margin-bottom: 0;
+  }
+
+  .card .card-text span {
+    font-weight: 400;
+    font-size: 1.2vh;
+  }
+
+}

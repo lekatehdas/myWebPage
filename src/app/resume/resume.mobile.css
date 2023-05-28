@@ -52,73 +52,30 @@
   }
 }
 
-@media only screen and (min-width: 460px) and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape) {
 
   .adjustable-height {
-    height: 65vh;
+    padding-top: 5vh;
+    height: initial;
+    min-height: 55vw;
   }
 
-  .movable-text {
+  .top {
     top: -4%;
     left: 1%;
   }
 
-  .movable-text h2 {
-    font-size: 4vh;
+  .top h2 {
+    font-size: 4vw;
     text-shadow: none;
   }
 
-  .movable-text p {
-    font-size: 1.2vh;
+  .top p {
+    font-size: 1.2vw;
   }
 
-  .work-experience-list {
-    position: relative;
-    top: -11%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1vh;
-    padding-left: 4vw;
-    margin: auto;
-  }
-
-  .download-button {
-    position: absolute;
-    left: 55%;
-    bottom: 2%;
-    width: 25vw;
-    height: 3vh;
-    margin: 0;
-    color: var(--contrast-color);
-    font-weight: 700;
-    line-height: 25px;
-    text-decoration: none;
-    transition: 1s;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-  }
-
-  .download-button span {
-    order: 1;
-  }
-
-  .download-button:hover {
-    background: var(--contrast-color);
-    color: var(--background-color);
-  }
-
-  .download-button:hover .download-icon {
-    filter: none;
-  }
-
-  .download-icon {
-    height: calc(100% - 1em);
-    width: auto;
-    order: 2;
-    filter: invert(61%) sepia(83%) saturate(544%) hue-rotate(351deg) brightness(102%) contrast(96%);
-    transition: 1s;
+  .middle {
+    padding-left: 2vw;
   }
 
 }

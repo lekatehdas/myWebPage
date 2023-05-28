@@ -3,7 +3,7 @@ import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.css', './resume.mobile.css']
+  styleUrls: ['./resume.component.css', './resume.mobile.css', './resume.tablet.css']
 })
 export class ResumeComponent implements OnInit {
   education = {

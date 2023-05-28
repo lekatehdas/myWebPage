@@ -1,7 +1,7 @@
-@media only screen and (max-width: 1080px) and (orientation: landscape) {
+@media only screen and (min-width: 420px) and (orientation: portrait) {
 
   .adjustable-height {
-    height: 70vh;
+    height: 75vh;
   }
 
   .component-max-width {
@@ -21,6 +21,32 @@
 
   .left-div {
     flex-basis: 7vw;
+  }
+
+  .right-div {
+    flex-basis: 7vw;
+  }
+
+  .top-div h2 {
+    font-size: 4vh;
+  }
+
+  .top-div p {
+    font-size: 1.2vh;
+  }
+
+  .vertical-text {
+    font-size: 1.5vh;
+  }
+
+  .middle-div {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    margin: 0 3vw;
+  }
+
+  .bottom-div > div {
+    height: 95%;
   }
 
 }

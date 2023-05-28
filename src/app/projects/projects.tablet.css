@@ -1,0 +1,23 @@
+@media only screen and (min-width: 420px) and (orientation: portrait) {
+
+  .page-min-height {
+    min-height: 65vh;
+  }
+
+  .text-container h2 {
+    font-size: 4vh;
+  }
+
+  .text-container p {
+    font-size: 1.1vh;
+  }
+
+  .left-arrow {
+    left: -12%;
+  }
+
+  .right-arrow {
+    right: -12%;
+  }
+
+}

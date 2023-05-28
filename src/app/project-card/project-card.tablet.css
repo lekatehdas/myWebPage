@@ -1,0 +1,15 @@
+@media only screen and (min-width: 420px) and (orientation: portrait) {
+
+  .project-card {
+    height: 60vh;
+  }
+
+  .project-details h3 {
+    font-size: 2vh;
+  }
+
+  .project-details p {
+    font-size: 1.1vh;
+  }
+
+}

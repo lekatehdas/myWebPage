@@ -6,7 +6,7 @@ import {environment} from "../../environments/environment";
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css', './contact.mobile.css']
+  styleUrls: ['./contact.component.css', './contact.mobile.css', './contact.tablet.css']
 })
 export class ContactComponent implements OnInit {
   name!: string;

@@ -1,0 +1,57 @@
+@media only screen and (min-width: 420px) and (orientation: portrait) {
+
+  .page-min-height {
+    min-height: 75vh;
+  }
+
+  .adjustable-height {
+    min-height: 60vh;
+  }
+
+  .movable-text h2 {
+    font-size: 4vh;
+    text-shadow: none;
+  }
+
+  .movable-text p {
+    font-size: 1vh;
+  }
+
+  .form-label {
+    font-size: 1vh;
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+  }
+
+  .form-input {
+    font-size: 1vh;
+    padding: 0.5vh;
+    border-radius: 0.5vh;
+  }
+
+
+  .form-textarea {
+    height: 20vh;
+    resize: none;
+  }
+
+  .form-button {
+    font-size: 1vh;
+    padding: 0.5vh 1vh;
+
+    width: 20vw;
+    height: 4vh;
+    margin: 1vh 0;
+    position: relative;
+    left: 25%;
+    bottom: -5%;
+  }
+
+  .send-icon {
+    height: calc(100% - 1vh);
+  }
+
+  .alert-placeholder {
+    height: 1vh;
+  }
+}
