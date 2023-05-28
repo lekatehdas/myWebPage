@@ -36,3 +36,28 @@
 .project-details p {
   font-size: 1vw;
 }
+
+@media only screen and (min-width: 1500px) {
+
+  .project-card {
+    width: 75vw;
+    height: 75vh;
+  }
+
+  .project-details {
+    text-align: left;
+    padding: 1vh;
+  }
+
+  .project-details h3 {
+    margin-bottom: 1vh;
+    font-weight: bold;
+    font-size: 3vh;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .project-details p {
+    font-size: 1.5vh;
+  }
+
+}

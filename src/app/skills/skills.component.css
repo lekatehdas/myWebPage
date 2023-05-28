@@ -119,3 +119,42 @@
 .highlight {
   color: var(--contrast-color);
 }
+
+@media only screen and (min-width: 1500px) {
+
+  .adjustable-height {
+    height: 75vh;
+    border-radius: 1vh;
+  }
+
+  .top-div h2 {
+    font-size: 5vh;
+    margin-bottom: 0.5vh;
+    right: 42%;
+    top: -2%;
+  }
+
+  .top-div p {
+    font-size: 1.8vh;
+    max-width: 40vh;
+    margin-bottom: 0.5vh;
+  }
+
+  .left-div {
+    flex-basis: 3vh;
+  }
+
+  .vertical-text {
+    font-size: 1.5vh;
+  }
+
+  .right-div {
+    flex-basis: 3vh;
+    flex-shrink: 0;
+  }
+
+  .dash {
+    font-size: 2vh;
+  }
+
+}

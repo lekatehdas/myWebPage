@@ -76,3 +76,37 @@
 .fade-in {
   animation: fade-in 0.5s;
 }
+
+@media only screen and (min-width: 1500px) {
+
+  .profile-picture-container {
+    width: 45vh;
+    height: 45vh;
+  }
+
+  .about-text {
+    position: relative;
+    max-width: 40vh;
+    margin-left: -10vh;
+    margin-top: -12vh;
+  }
+
+  .about-text h2 {
+    font-size: 5vh;
+    margin-bottom: 0.5vh;
+    font-weight: bold;
+  }
+
+  .about-text h3 {
+    font-size: 3vh;
+    margin-top: 1vh;
+    margin-left: 3vh;
+  }
+
+  .about-text p {
+    font-size: 1vh;
+    margin-top: 1vh;
+    margin-left: 8vh;
+  }
+
+}

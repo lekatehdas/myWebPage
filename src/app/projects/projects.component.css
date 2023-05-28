@@ -105,11 +105,41 @@
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+
+  .text-container {
+    left: 77%;
+    top: 9%;
+  }
+
+  .text-container h2 {
+    font-size: 6vh;
+    padding-bottom: 1vh;
+  }
+
+  .text-container p {
+    font-size: 1.5vh;
+  }
+
+  .project-display {
+    gap: 2vh;
+    margin-top: 0;
+  }
 }

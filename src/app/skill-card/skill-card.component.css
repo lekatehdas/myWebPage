@@ -31,3 +31,17 @@
   justify-content: center;
   text-align: center;
 }
+
+@media only screen and (min-width: 1500px) {
+
+  .skill-card {
+    height: 20vh;
+    width: 25vh;
+    border-radius: 1vh;
+  }
+
+  .icon-container {
+    margin: 1vh;
+  }
+
+}

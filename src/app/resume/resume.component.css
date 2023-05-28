@@ -113,3 +113,39 @@
   filter: invert(61%) sepia(83%) saturate(544%) hue-rotate(351deg) brightness(102%) contrast(96%);
   transition: 1s;
 }
+
+@media only screen and (min-width: 1500px) {
+
+  .adjustable-height {
+    min-height: 65vh;
+  }
+
+  .top h2 {
+    font-size: 6vh;
+    margin-bottom: 2vh;
+  }
+
+  .top p {
+    font-size: 1.5vh;
+  }
+
+  .middle {
+    gap: 1vh;
+    margin-left: 7vw;
+  }
+
+  .download-button {
+    font-size: 1.5vh;
+    left: 33%;
+    width: 12vw;
+    height: 4vh;
+    margin: 1vh auto;
+    line-height: 1vh;
+    padding: 1vh;
+  }
+
+  .download-icon {
+    height: calc(100% - 1vh);
+  }
+
+}
