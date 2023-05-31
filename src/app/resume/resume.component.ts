@@ -24,9 +24,9 @@ export class ResumeComponent implements OnInit {
       icon: 'assets/icons/whiteboard.png'
     },
     {
-      title: 'TODO',
+      title: 'Full Stack Developer',
       company: 'Haagan Sirtekma Oy',
-      duration: '201X - 2020',
+      duration: '2019 - 2020',
       icon: 'assets/icons/programmer.png'
     },
     {

@@ -1,0 +1,78 @@
+[debug] [2023-05-31T08:12:10.775Z] ----------------------------------------------------------------------
+[debug] [2023-05-31T08:12:10.777Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\akisi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-31T08:12:10.777Z] CLI Version:   12.2.1
+[debug] [2023-05-31T08:12:10.778Z] Platform:      win32
+[debug] [2023-05-31T08:12:10.778Z] Node Version:  v18.16.0
+[debug] [2023-05-31T08:12:10.779Z] Time:          Wed May 31 2023 10:12:10 GMT+0200 (Central European Summer Time)
+[debug] [2023-05-31T08:12:10.779Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-31T08:12:10.784Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-31T08:12:10.784Z] > authorizing via signed-in user (aki.sirkia@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\myWebPage
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-31T08:13:19.565Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-31T08:13:19.565Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"my_portfolio_webpage","name":"my_portfolio_webpage"}
+[debug] [2023-05-31T08:13:20.389Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2023-05-31T08:13:20.389Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2023-05-31T08:13:20.444Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\akisi\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\akisi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-05-31T08:13:44.380Z] ----------------------------------------------------------------------
+[debug] [2023-05-31T08:13:44.382Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\akisi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-05-31T08:13:44.382Z] CLI Version:   12.2.1
+[debug] [2023-05-31T08:13:44.382Z] Platform:      win32
+[debug] [2023-05-31T08:13:44.382Z] Node Version:  v18.16.0
+[debug] [2023-05-31T08:13:44.383Z] Time:          Wed May 31 2023 10:13:44 GMT+0200 (Central European Summer Time)
+[debug] [2023-05-31T08:13:44.383Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-31T08:13:44.389Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-31T08:13:44.390Z] > authorizing via signed-in user (aki.sirkia@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\myWebPage
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-05-31T08:14:05.317Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-05-31T08:14:05.318Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"my-portfolio-webpage","name":"my-portfolio-webpage"}
+[debug] [2023-05-31T08:14:06.154Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-05-31T08:14:06.154Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-05-31T08:14:06.212Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\akisi\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\akisi\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID my-portfolio-webpage. Please try again with a unique project ID.
